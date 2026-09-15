@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build (static export)
+        run: pnpm build
+
+      - name: Cek hasil static export
+        run: |
+          test -f out/index.html || (echo "out/index.html tidak ada" && exit 1)
+          test -f out/sitemap.xml || (echo "sitemap.xml tidak ada" && exit 1)
+          test -f out/robots.txt || (echo "robots.txt tidak ada" && exit 1)
+          echo "jumlah halaman kost: $(ls out/kost | wc -l)"
+          echo "jumlah halaman area: $(ls out/area | wc -l)"

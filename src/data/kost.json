@@ -1,0 +1,2777 @@
+[
+  {
+    "id": "kost-001",
+    "slug": "bengkong-bengkong-indah-atas-aljabar-5194",
+    "no": 1,
+    "alamat": "BENGKONG INDAH ATAS (ALJABAR)",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285376805194",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-002",
+    "slug": "nagoya-seraya-belakang-loveseafood3-nagoya-foodcourt-168-889",
+    "no": 2,
+    "alamat": "Seraya, Belakang Loveseafood3 Nagoya (Foodcourt 168).",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6282260028899",
+    "kriteria": "Putri",
+    "harga": 1300000,
+    "hargaAlternatif": [
+      1300000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-003",
+    "slug": "bengkong-bengkong-laut-tanjung-buntung-golden-prawn-8073",
+    "no": 3,
+    "alamat": "BENGKONG LAUT –TANJUNG BUNTUNG GOLDEN PRAWN",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285271608073",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-004",
+    "slug": "sekupang-perum-edofa-gardenia-blok-f9-no-12-b-4204",
+    "no": 4,
+    "alamat": "Perum Edofa Gardenia Blok F9 No 12 B",
+    "area": "Sekupang",
+    "jenis": "Kost",
+    "wa": "6281372454204",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000,
+      850000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "duplikat dari baris #93"
+    ]
+  },
+  {
+    "id": "kost-005",
+    "slug": "bengkong-bengkong-sadai-lantai-2-dekat-sman8-batam-3325",
+    "no": 5,
+    "alamat": "Bengkong Sadai, Lantai 2. Dekat SMAN8 Batam",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282283763325",
+    "kriteria": "Putri",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-006",
+    "slug": "bengkong-simpang-bengkong-harapan-1-hook-samping-dewa-motor",
+    "no": 6,
+    "alamat": "Simpang bengkong harapan 1, Hook, samping Dewa Motor",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281372011086",
+    "kriteria": "Campur",
+    "harga": 2500000,
+    "hargaAlternatif": [
+      2500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-007",
+    "slug": "batam-center-mitra-raya-2-batam-center-5228",
+    "no": 7,
+    "alamat": "Mitra Raya 2 BATAM CENTER !",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281276355228",
+    "kriteria": "Belum jelas",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  },
+  {
+    "id": "kost-008",
+    "slug": "bengkong-dekat-objek-wisata-golden-city-0832",
+    "no": 8,
+    "alamat": "Dekat objek wisata golden city",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282330000832",
+    "kriteria": "Campur",
+    "harga": 850000,
+    "hargaAlternatif": [
+      850000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-009",
+    "slug": "batu-ampar-lokasi-di-bukit-senyum-villa-winsor-dkt-polsek-ba",
+    "no": 9,
+    "alamat": "Lokasi di bukit senyum villa winsor dkt polsek batu ampar",
+    "area": "Batu Ampar",
+    "jenis": "Kost",
+    "wa": "6281365498385",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-010",
+    "slug": "bengkong-bengkong-baru-blok-c-no-8-8385",
+    "no": 10,
+    "alamat": "bengkong baru blok c no 8.",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281365498385",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-011",
+    "slug": "batu-aji-genta-1-blok-bh-no-15-0364",
+    "no": 11,
+    "alamat": "Genta 1 Blok Bh No. 15",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "628127040364",
+    "kriteria": "Putra",
+    "harga": 600000,
+    "hargaAlternatif": [
+      600000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-012",
+    "slug": "bengkong-bengkong-polisi-6224",
+    "no": 12,
+    "alamat": "bengkong polisi",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282284966224",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": [
+      "duplikat dari baris #41"
+    ]
+  },
+  {
+    "id": "kost-013",
+    "slug": "batu-aji-buliang-batu-aji-0781",
+    "no": 13,
+    "alamat": "Buliang Batu Aji",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "62895634740781",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-014",
+    "slug": "bengkong-bengkong-pertiwi-blok-g1-no-11-tj-buntung-kec-bengk",
+    "no": 14,
+    "alamat": "Bengkong pertiwi blok G1 no 11, Tj. Buntung, Kec. Bengkong, Kota Batam, Kepulauan Riau 29444",
+    "area": "Bengkong",
+    "jenis": "Kontrakan",
+    "wa": "6285297032888",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "Tour Rumah",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-015",
+    "slug": "batam-center-kampung-tua-belian-batam-centre-6869",
+    "no": 15,
+    "alamat": "kampung tua belian Batam Centre",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285263146869",
+    "kriteria": "Putra",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": [
+      "duplikat dari baris #107"
+    ]
+  },
+  {
+    "id": "kost-016",
+    "slug": "batu-aji-perumahan-bambu-kuning-puskopkar-a13-no-17-batu-aji",
+    "no": 16,
+    "alamat": "Perumahan Bambu Kuning Puskopkar A13 No 17, Batu Aji, Belakang UNRIKA dan RSUD EMBUNG FATIMAH",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6285318638883",
+    "kriteria": "Campur",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "Location",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-017",
+    "slug": "batu-aji-perum-puskopkar-bambu-kuning-a13-nomor-17-belakang",
+    "no": 17,
+    "alamat": "Perum Puskopkar Bambu Kuning A13 Nomor 17 Belakang UNRIKA RSUD Embung Fatimah",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6285318638883",
+    "kriteria": "Campur",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-018",
+    "slug": "batam-center-jl-bida-asri-1-blok-b1-no-57-2483",
+    "no": 18,
+    "alamat": "Jl. Bida Asri 1 Blok B1 No. 57",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "628116662483",
+    "kriteria": "Putri",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [
+      "survey",
+      "sendiri"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-019",
+    "slug": "batam-center-perumahan-cendana-batam-centre-7997",
+    "no": 19,
+    "alamat": "Perumahan Cendana Batam Centre",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282384017997",
+    "kriteria": "Putri",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-020",
+    "slug": "nagoya-ruko-nagoya-newton-blok-m-no-3a-2117",
+    "no": 20,
+    "alamat": "ruko nagoya newton blok M no 3A.",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6281372722117",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-021",
+    "slug": "bengkong-bukit-beruntung-2177",
+    "no": 21,
+    "alamat": "BUKIT BERUNTUNG",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282171672177",
+    "kriteria": "Belum jelas",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  },
+  {
+    "id": "kost-022",
+    "slug": "batam-center-batam-centre-depan-sekolah-harapan-utama-kos-ny",
+    "no": 22,
+    "alamat": "BATAM CENTRE Depan sekolah Harapan Utama, Kos nyaman dan bersih di Taman Marcelia.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281298234630",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-023",
+    "slug": "batu-aji-dekat-unrika-dan-rs-embung-fatima-8588",
+    "no": 23,
+    "alamat": "Dekat unrika dan RS embung fatima",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282389568588",
+    "kriteria": "Campur",
+    "harga": 750000,
+    "hargaAlternatif": [
+      750000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-024",
+    "slug": "bengkong-bengkong-harapan-2-blok-i-3241",
+    "no": 24,
+    "alamat": "Bengkong Harapan 2 Blok i)",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281261413241",
+    "kriteria": "Putra",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-025",
+    "slug": "bengkong-bengkong-kolam-blok-i1-no-19-3100",
+    "no": 25,
+    "alamat": "bengkong kolam blok i1 no 19",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281268853100",
+    "kriteria": "Putri",
+    "harga": 1700000,
+    "hargaAlternatif": [
+      1700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-026",
+    "slug": "tiban-tiban-ksb-mentarau-2178",
+    "no": 26,
+    "alamat": "tiban KSB mentarau",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6287867752178",
+    "kriteria": "Putri",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-027",
+    "slug": "nagoya-blk-b-komp-nagoya-newton-jl-imam-bonjol-blok-l-rw-3-l",
+    "no": 27,
+    "alamat": "Blk. B, Komp. Nagoya Newton, Jl. Imam Bonjol Blok L, RW.3, Lubuk Baja Kota, Lubuk Baja, Batam City, Riau Islands",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6288804571015",
+    "kriteria": "Putra",
+    "harga": 1850000,
+    "hargaAlternatif": [
+      1850000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-028",
+    "slug": "batam-center-taman-hang-tuah-blok-a6-no-06-batam-centre-9643",
+    "no": 28,
+    "alamat": "TAMAN HANG TUAH BLOK A6 NO.06 BATAM CENTRE",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281372979643",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-029",
+    "slug": "bengkong-simpang-bengkong-harapan-1-1086",
+    "no": 29,
+    "alamat": "Simpang bengkong harapan 1",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281372011086",
+    "kriteria": "Campur",
+    "harga": 2500000,
+    "hargaAlternatif": [
+      2500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-030",
+    "slug": "bengkong-ruko-bengkong-jaya-top-100-bengkong-6966",
+    "no": 30,
+    "alamat": "ruko bengkong jaya top 100 bengkong",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281274166966",
+    "kriteria": "Campur",
+    "harga": 1100000,
+    "hargaAlternatif": [
+      1100000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-031",
+    "slug": "batam-center-perumahan-green-land-batam-batam-centre-7220",
+    "no": 31,
+    "alamat": "PERUMAHAN GREEN LAND BATAM BATAM CENTRE",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285272027220",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-032",
+    "slug": "bengkong-kos-area-bengkong-8073",
+    "no": 32,
+    "alamat": "KOS AREA BENGKONG",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285271608073",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-033",
+    "slug": "batam-center-batam-center-dekat-pollux-3333",
+    "no": 33,
+    "alamat": "Batam Center Dekat Pollux",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281270563333",
+    "kriteria": "Campur",
+    "harga": 1250000,
+    "hargaAlternatif": [
+      1250000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-034",
+    "slug": "batam-center-perumahan-greenland-batam-centre-4546",
+    "no": 34,
+    "alamat": "Perumahan Greenland, Batam Centre",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281990654546",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-035",
+    "slug": "batu-aji-kavling-lama-sagulung-6680",
+    "no": 35,
+    "alamat": "kavling lama, sagulung",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6285179706680",
+    "kriteria": "Campur",
+    "harga": 850000,
+    "hargaAlternatif": [
+      850000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-036",
+    "slug": "batam-center-area-mitra-raya-2-batam-center-5227",
+    "no": 36,
+    "alamat": "AREA Mitra Raya 2 BATAM CENTER",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281276355227",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-037",
+    "slug": "bengkong-benkong-indah-bawah-9629",
+    "no": 37,
+    "alamat": "Benkong Indah Bawah",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281378789629",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-038",
+    "slug": "batu-ampar-kavling-pelangi-melcem-tg-sengkuang-batu-ampar-20",
+    "no": 38,
+    "alamat": "Kavling pelangi melcem tg. sengkuang Batu Ampar",
+    "area": "Batu Ampar",
+    "jenis": "Kost",
+    "wa": "6285761892058",
+    "kriteria": "Campur",
+    "harga": 650000,
+    "hargaAlternatif": [
+      650000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-039",
+    "slug": "nagoya-nagoya-6908",
+    "no": 39,
+    "alamat": "Nagoya",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "62895345376908",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-040",
+    "slug": "tiban-tiban-btn-blok-l-no-20-1956",
+    "no": 40,
+    "alamat": "tiban btn blok L no 20",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281372431956",
+    "kriteria": "Campur",
+    "harga": 550000,
+    "hargaAlternatif": [
+      550000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-042",
+    "slug": "batam-center-townhouse-oma-batam-centre-9767",
+    "no": 42,
+    "alamat": "Townhouse Oma Batam Centre.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285278609767",
+    "kriteria": "Putri",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-043",
+    "slug": "batu-aji-jalan-batu-aji-kompleks-mitra-raya-blok-d1-nomor-2",
+    "no": 43,
+    "alamat": "Jalan Batu Aji Kompleks Mitra Raya blok D1 nomor 2 dan 3",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6289509509279",
+    "kriteria": "Campur",
+    "harga": 1150000,
+    "hargaAlternatif": [
+      1150000
+    ],
+    "referensi": [],
+    "catatan": "Lokasi",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-044",
+    "slug": "sekupang-edofa-gardenia-jl-raya-marina-city-tj-riau-kec-seku",
+    "no": 44,
+    "alamat": "Edofa Gardenia Jl. Raya Marina City, Tj. Riau, Kec. Sekupang, Kota Batam, Kepulauan Riau 29433. Indonesia",
+    "area": "Sekupang",
+    "jenis": "Kost",
+    "wa": "6281220134539",
+    "kriteria": "Campur",
+    "harga": 1400000,
+    "hargaAlternatif": [
+      1400000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-045",
+    "slug": "botania-depan-kfc-botania-1-6381",
+    "no": 45,
+    "alamat": "depan KFC botania 1 .",
+    "area": "Botania",
+    "jenis": "Kost",
+    "wa": "628117006381",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-046",
+    "slug": "batu-aji-dekat-smkn-5-batam-dekat-pasar-bbc-6148",
+    "no": 46,
+    "alamat": "dekat SMKN 5 batam dekat pasar BBC",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282281426148",
+    "kriteria": "Putri",
+    "harga": 650000,
+    "hargaAlternatif": [
+      650000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-047",
+    "slug": "nagoya-batam-nagoya-windsor-morning-bakery-4210",
+    "no": 47,
+    "alamat": "Batam, Nagoya, Windsor Morning bakery.",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6285272094210",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-048",
+    "slug": "nagoya-marina-park-nagoya-3355",
+    "no": 48,
+    "alamat": "Marina Park, Nagoya.",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6285185433355",
+    "kriteria": "Campur",
+    "harga": 1300000,
+    "hargaAlternatif": [
+      1300000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-049",
+    "slug": "batu-aji-kavling-kamboja-dapur-12-sagulung-8515",
+    "no": 49,
+    "alamat": "Kavling kamboja, Dapur 12, Sagulung",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282285168515",
+    "kriteria": "Putri",
+    "harga": 750000,
+    "hargaAlternatif": [
+      750000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-050",
+    "slug": "batam-center-taman-hang-tuah-batam-centre-8101",
+    "no": 50,
+    "alamat": "TAMAN HANG TUAH BATAM CENTRE",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281270178101",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-051",
+    "slug": "batam-center-ruko-cikitsu-blok-c8-no-7-8-9-0968",
+    "no": 51,
+    "alamat": "Ruko Cikitsu Blok C8 No.7-8-9",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "628117700968",
+    "kriteria": "Campur",
+    "harga": 950000,
+    "hargaAlternatif": [
+      950000
+    ],
+    "referensi": [],
+    "catatan": "Lokasi",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-052",
+    "slug": "batam-center-komp-anggrek-mas-1-blok-k-no-16-7-8-11-imperium",
+    "no": 52,
+    "alamat": "Komp anggrek mas 1 blok k no 16-7-8-11, Imperium superblok blok B12 A19 A18 A17 Batam kota, Kmr mandi luar",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285256909096",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-053",
+    "slug": "batu-aji-buana-raya-cluster-fortura-9353",
+    "no": 53,
+    "alamat": "Buana raya cluster fortura",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281372279353",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": [
+      "duplikat dari baris #69"
+    ]
+  },
+  {
+    "id": "kost-054",
+    "slug": "batam-center-perumahan-frensiana-garden-blok-g-no-9-batam-ce",
+    "no": 54,
+    "alamat": "Perumahan Frensiana Garden Blok G No.9, Batam Centre",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281220822202",
+    "kriteria": "Putra",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-055",
+    "slug": "batam-center-taman-raya-blok-hv-blok-8795",
+    "no": 55,
+    "alamat": "Taman raya blok HV Blok",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6287722088795",
+    "kriteria": "Campur",
+    "harga": 1400000,
+    "hargaAlternatif": [
+      1400000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-056",
+    "slug": "nagoya-dibelakang-nagoya-furdcort-jl-komp-bumi-indah-no-47-l",
+    "no": 56,
+    "alamat": "dibelakang Nagoya furdcort Jl. Komp. Bumi Indah No.47, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6281293256466",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-057",
+    "slug": "nagoya-kos-baloi-centre-0003",
+    "no": 57,
+    "alamat": "kos baloi centre",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6285961450003",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-058",
+    "slug": "nagoya-kos-komp-ruko-nagoya-newton-blok-m-no-3a-5353",
+    "no": 58,
+    "alamat": "Kos komp ruko nagoya newton blok M no 3A.",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "628983915353",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-059",
+    "slug": "bengkong-perumahan-golden-prima-putra-putri-7555",
+    "no": 59,
+    "alamat": "Perumahan Golden Prima (Putra/Putri)",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282388087555",
+    "kriteria": "Campur",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-060",
+    "slug": "batam-center-duta-mas-baloi-3059",
+    "no": 60,
+    "alamat": "Duta Mas Baloi.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285846213059",
+    "kriteria": "Putri",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-061",
+    "slug": "batam-center-kampung-tua-berlian-di-belakang-bank-btn-blk-e",
+    "no": 61,
+    "alamat": "kampung tua berlian di belakang bank btn blk e nomor 12",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282386375536",
+    "kriteria": "Campur",
+    "harga": 2500000,
+    "hargaAlternatif": [
+      2500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-062",
+    "slug": "batam-center-ruko-mega-legenda-blok-e3-35-7077",
+    "no": 62,
+    "alamat": "ruko mega legenda blok E3 35",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6283171467077",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-063",
+    "slug": "sekupang-lokasi-strategis-dekat-dengan-galangan-kapal-2401",
+    "no": 63,
+    "alamat": "Lokasi strategis dekat dengan Galangan kapal",
+    "area": "Sekupang",
+    "jenis": "Kost",
+    "wa": "628783482401",
+    "kriteria": "Belum jelas",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  },
+  {
+    "id": "kost-064",
+    "slug": "batam-center-lokasi-di-marchelia-sangat-strategis-dekat-deng",
+    "no": 64,
+    "alamat": "Lokasi di Marchelia Sangat Strategis, Dekat dengan One Mall, Mega Mall, K Square, Fanindo Sanctuary, Politeknik",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6289673272338",
+    "kriteria": "Putra",
+    "harga": 2000000,
+    "hargaAlternatif": [
+      2000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-065",
+    "slug": "batu-aji-lokasi-batu-aji-pasar-aviari-seken-blok-c-2-no-9-59",
+    "no": 65,
+    "alamat": "Lokasi batu Aji pasar aviari seken blok C 2 No 9",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281378275955",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-066",
+    "slug": "batu-aji-kav-sagulung-baru-blok-u-no-64-2589",
+    "no": 66,
+    "alamat": "kav Sagulung baru blok u no 64",
+    "area": "Batu Aji",
+    "jenis": "Kontrakan",
+    "wa": "6281917462589",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-067",
+    "slug": "nagoya-bengkong-dekat-polsek-dan-kawasan-golden-prown-0607",
+    "no": 67,
+    "alamat": "BENGKONG DEKAT POLSEK DAN KAWASAN GOLDEN PROWN",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6285271070607",
+    "kriteria": "Campur",
+    "harga": 1300000,
+    "hargaAlternatif": [
+      1300000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-068",
+    "slug": "tiban-tiban-indah-btn-2786",
+    "no": 68,
+    "alamat": "tiban indah BTN",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281271982786",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-070",
+    "slug": "batam-center-teluk-tering-batam-3691",
+    "no": 70,
+    "alamat": "Teluk tering, batam",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6289673803691",
+    "kriteria": "Campur",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-071",
+    "slug": "sekupang-marina-sekupang-2179",
+    "no": 71,
+    "alamat": "marina Sekupang",
+    "area": "Sekupang",
+    "jenis": "Kost",
+    "wa": "6285959022179",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-072",
+    "slug": "batu-aji-kavling-bukit-seroja-blok-e-86-86-8159",
+    "no": 72,
+    "alamat": "kavling bukit seroja blok e 86 86",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282123798159",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-073",
+    "slug": "bengkong-tanjung-buntung-bengkong-2745",
+    "no": 73,
+    "alamat": "tanjung buntung, bengkong",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6289524902745",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-074",
+    "slug": "batu-aji-perumahan-dreamland-2-marina-8787",
+    "no": 74,
+    "alamat": "Perumahan Dreamland 2, Marina",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281266338787",
+    "kriteria": "Putra",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "https://www.facebook.com/share/1bsyp8z257/?mibextid=wwxifr"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-075",
+    "slug": "batam-center-legenda-batam-center-avva-kost-lagenda-5686",
+    "no": 75,
+    "alamat": "Legenda Batam Center ( AVVA KOST LAGENDA)",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "628117705686",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-076",
+    "slug": "batam-center-perumahan-kembang-sari-block-c-no-53a-belakang",
+    "no": 76,
+    "alamat": "Perumahan Kembang Sari, Block C No.53A, belakang Indomart Orchid dekat Simpang Jam/Fly Over Laluan Madani",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282364327448",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-077",
+    "slug": "bengkong-bengkong-indah-bawah-9076",
+    "no": 77,
+    "alamat": "bengkong indah bawah",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281958479076",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000,
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "duplikat dari baris #96"
+    ]
+  },
+  {
+    "id": "kost-078",
+    "slug": "bengkong-ruko-cahaya-garden-6645",
+    "no": 78,
+    "alamat": "Ruko Cahaya Garden",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281364666645",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-079",
+    "slug": "bengkong-kost-di-baloi-persero-0003",
+    "no": 79,
+    "alamat": "Kost di baloi persero",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285961450003",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-080",
+    "slug": "nagoya-lokasi-nagoya-square-dekat-hotel-batam-star-dekat-kan",
+    "no": 80,
+    "alamat": "Lokasi Nagoya square dekat hotel Batam Star dekat kantor BPJS Nagoya.",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6281372222120",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-081",
+    "slug": "bengkong-bengkong-indah-suadebi-5589",
+    "no": 81,
+    "alamat": "bengkong indah suadebi",
+    "area": "Bengkong",
+    "jenis": "Kontrakan",
+    "wa": "6285263655589",
+    "kriteria": "Campur",
+    "harga": 2000000,
+    "hargaAlternatif": [
+      2000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-082",
+    "slug": "batam-center-taman-batara-raya-3446",
+    "no": 82,
+    "alamat": "Taman Batara Raya",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281996443446",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": [
+      "duplikat dari baris #108"
+    ]
+  },
+  {
+    "id": "kost-083",
+    "slug": "nongsa-buana-duta-bandara-nongsa-0060",
+    "no": 83,
+    "alamat": "Buana Duta Bandara, Nongsa.",
+    "area": "Nongsa",
+    "jenis": "Kost",
+    "wa": "6285274910060",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-084",
+    "slug": "batu-aji-pasar-aviari-seken-batu-aji-3735",
+    "no": 84,
+    "alamat": "Pasar aviari seken batu aji",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281363103735",
+    "kriteria": "Putri",
+    "harga": 650000,
+    "hargaAlternatif": [
+      650000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-085",
+    "slug": "batu-aji-flamboyan-blok-f-no-73-rt-004-rw014-5-menitan-dari",
+    "no": 85,
+    "alamat": "Flamboyan blok f no 73 RT 004 rw014, 5 menitan dari pasar SP batu aji, dekat dengan pusat perbelanjaan pasar BBC, SMKN 5 batam",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282281426148",
+    "kriteria": "Putri",
+    "harga": 650000,
+    "hargaAlternatif": [
+      650000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-086",
+    "slug": "piayu-pesona-simpang-laguna-piayu-1688",
+    "no": 86,
+    "alamat": "Pesona Simpang Laguna, Piayu.",
+    "area": "Piayu",
+    "jenis": "Kost",
+    "wa": "6285264101688",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-087",
+    "slug": "batu-aji-bt-aji-puskopkar-2363",
+    "no": 87,
+    "alamat": "bt aji puskopkar",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6283110952363",
+    "kriteria": "Campur",
+    "harga": 550000,
+    "hargaAlternatif": [
+      550000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-088",
+    "slug": "batu-aji-perumahan-cipta-sarana-blok-c1-no-1-batu-aji-sampin",
+    "no": 88,
+    "alamat": "Perumahan Cipta Sarana blok C1 No.1 batu aji samping kantor camat batu aji",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6285364691151",
+    "kriteria": "Campur",
+    "harga": 1100000,
+    "hargaAlternatif": [
+      1100000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-089",
+    "slug": "lubuk-baja-baloi-centre-jl-teratai-2-baloi-centre-dekat-bcs",
+    "no": 89,
+    "alamat": "baloi centre,jl teratai 2 baloi centre dekat bcs",
+    "area": "Lubuk Baja",
+    "jenis": "Kost",
+    "wa": "6285961450003",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-090",
+    "slug": "batu-ampar-kos-kosongan-jodoh-belakang-spbu-jodoh-dekat-harb",
+    "no": 90,
+    "alamat": "Kos kosongan Jodoh (Belakang SPBU Jodoh), Dekat Harbourbay, Planet Hotel, Bank BCA, dll.",
+    "area": "Batu Ampar",
+    "jenis": "Kost",
+    "wa": "6289673459682",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-091",
+    "slug": "bengkong-ruko-aljabar-a2-bengkong-7875",
+    "no": 91,
+    "alamat": "Ruko Aljabar A2 Bengkong",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282170017875",
+    "kriteria": "Putri",
+    "harga": 450000,
+    "hargaAlternatif": [
+      450000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-092",
+    "slug": "botania-dekat-pasar-botania1-dekat-sekolah-dekat-rumah-sakit",
+    "no": 92,
+    "alamat": "dekat pasar Botania1, dekat sekolah, dekat rumah sakit dan dekat bandara.",
+    "area": "Botania",
+    "jenis": "Kost",
+    "wa": "628116912984",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-094",
+    "slug": "botania-depan-mall-botania-2-1222",
+    "no": 94,
+    "alamat": "depan Mall Botania 2",
+    "area": "Botania",
+    "jenis": "Kost",
+    "wa": "6281280041222",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-095",
+    "slug": "batu-aji-kost-batu-aji-dekat-bukit-daeng-1181",
+    "no": 95,
+    "alamat": "Kost batu aji, dekat bukit daeng",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281517171181",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-097",
+    "slug": "sagulung-dapur-12-lewat-simpang-markopolo-9594",
+    "no": 97,
+    "alamat": "dapur 12,lewat simpang markopolo",
+    "area": "Sagulung",
+    "jenis": "Kost",
+    "wa": "6282382469594",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-098",
+    "slug": "nagoya-depan-nagoya-hill-mall-belakang-foodcourt-168-lovesea",
+    "no": 98,
+    "alamat": "Depan Nagoya hill mall/ belakang foodcourt 168 (loveseafood nagoya )",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6282173093805",
+    "kriteria": "Campur",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-099",
+    "slug": "batu-ampar-sebrang-harborbay-jodoh-3361",
+    "no": 99,
+    "alamat": "Sebrang Harborbay Jodoh",
+    "area": "Batu Ampar",
+    "jenis": "Kost",
+    "wa": "6281266633361",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-100",
+    "slug": "batu-aji-bukit-tempayan-batu-aji-batam-city-riau-islands-294",
+    "no": 100,
+    "alamat": "Bukit Tempayan, Batu Aji, Batam City, Riau Islands 29425, Jalan Batu Aji Kompleks Mitra Raya blok D1 nomor 2 dan 3",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6289509509279",
+    "kriteria": "Campur",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-101",
+    "slug": "bengkong-pas-turi-dekat-dengan-golden-pron-4221",
+    "no": 101,
+    "alamat": "pas Turi, dekat dengan golden pron",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281378164221",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-102",
+    "slug": "batam-center-di-perum-taman-mediterania-batam-center-bersebe",
+    "no": 102,
+    "alamat": "Di perum taman Mediterania Batam center. bersebelahan dengan pasar Mega legenda dan bersebrangan dengan tunas industri.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281261023674",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-103",
+    "slug": "batu-aji-lokasi-komp-permata-puri-blk-batu-aji-batam-9806",
+    "no": 103,
+    "alamat": "Lokasi Komp. PERMATA PURI BLK Batu aji Batam",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281364799806",
+    "kriteria": "Putri",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-104",
+    "slug": "bengkong-kavling-tj-buntung-blok-c-no-1-gg-camelia-belakang",
+    "no": 104,
+    "alamat": "kavling tj buntung blok c no 1 gg camelia (belakang smk maritim bengkong)",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285271116896",
+    "kriteria": "Campur",
+    "harga": 700000,
+    "hargaAlternatif": [
+      700000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-105",
+    "slug": "bengkong-ruko-golden-bci-blok-t-1-no-12-a-6959",
+    "no": 105,
+    "alamat": "ruko golden bci blok T 1 no 12 a",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282387606959",
+    "kriteria": "Putri",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-106",
+    "slug": "batam-center-perumahan-greenland-batam-4546",
+    "no": 106,
+    "alamat": "Perumahan Greenland batam",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281990654546",
+    "kriteria": "Putri",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-109",
+    "slug": "piayu-perumahan-bukit-raya-indah-7729",
+    "no": 109,
+    "alamat": "Perumahan Bukit Raya Indah",
+    "area": "Piayu",
+    "jenis": "Kontrakan",
+    "wa": "628740547729",
+    "kriteria": "Putri",
+    "harga": 950000,
+    "hargaAlternatif": [
+      950000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-110",
+    "slug": "botania-cluster-saffron-botania-blok-c-no-11-2698",
+    "no": 110,
+    "alamat": "Cluster Saffron Botania, Blok C No. 11",
+    "area": "Botania",
+    "jenis": "Kost",
+    "wa": "628973132698",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-111",
+    "slug": "batam-center-ruko-bintang-raya-sbrang-hotel-grand-mercure-53",
+    "no": 111,
+    "alamat": "Ruko Bintang Raya - Sbrang Hotel Grand Mercure",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285264105388",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-112",
+    "slug": "batam-center-taman-mediterania-batam-center-7885",
+    "no": 112,
+    "alamat": "Taman Mediterania, Batam Center",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282172387885",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000,
+      1600000
+    ],
+    "referensi": [
+      "admin",
+      "survey"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "duplikat dari baris #118"
+    ]
+  },
+  {
+    "id": "kost-113",
+    "slug": "batam-center-cluster-saffron-botania-blok-c-no-11-2698",
+    "no": 113,
+    "alamat": "Cluster Saffron Botania, Blok C No.11.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "628973132698",
+    "kriteria": "Campur",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "Harga masih estimasi",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-114",
+    "slug": "batam-center-komplek-ruko-mega-legenda-blok-a1-no-31-4999",
+    "no": 114,
+    "alamat": "Komplek ruko mega legenda blok A1 no 31",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281372164999",
+    "kriteria": "Putra",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "Harga masih estimasi",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-115",
+    "slug": "batam-center-legenda-malaka-blok-a3-no-15-batam-center-8787",
+    "no": 115,
+    "alamat": "Legenda Malaka blok A3 no 15 Batam Center",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282225438787",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [],
+    "catatan": "Admin pernah survey kesana dan terakhir harga kemarin gatau sekarang",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-116",
+    "slug": "tiban-tiban-3-perumahan-masyeba-lokasi-dekat-pom-bensin-tiba",
+    "no": 116,
+    "alamat": "Tiban 3, Perumahan Masyeba, Lokasi dekat pom bensin Tiban, KFC, Mie Gacoan, Mie Tarempa.",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281261164016",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [],
+    "catatan": "Tidak ada info ini campur/putra/putri",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-117",
+    "slug": "tiban-komplek-tiban-3-blok-a-no-61-5933",
+    "no": 117,
+    "alamat": "Komplek Tiban 3 Blok A No. 61",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281379845933",
+    "kriteria": "Putri",
+    "harga": 1200000,
+    "hargaAlternatif": [
+      1200000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-119",
+    "slug": "batam-center-villa-hang-lekir-blok-dd2-no-27-rt-04-rw-05-kec",
+    "no": 119,
+    "alamat": "Villa Hang Lekir blok dd2 no.27 RT.04 RW.05, Kecamatan Batam Kota, Kota Batam, Kepulauan Riau, 29444",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6287792691617",
+    "kriteria": "Campur",
+    "harga": 1350000,
+    "hargaAlternatif": [
+      1350000
+    ],
+    "referensi": [
+      "mami",
+      "kos"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-120",
+    "slug": "batu-aji-villa-muka-kuning-blok-e1-no-1-jalan-perum-villa-mu",
+    "no": 120,
+    "alamat": "Villa Muka Kuning Blok E1 No 1 Jalan Perum Villa Muka Kuning, Tembesi, Kec. Sagulung, Kota Batam, Kepulauan Riau 29445, Indonesia .",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281270111191",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "mami",
+      "kos"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-121",
+    "slug": "nongsa-ruko-puri-selebriti-1-blok-a1-7-batu-besar-kecamatan",
+    "no": 121,
+    "alamat": "Ruko Puri Selebriti 1 Blok A1-7, Batu Besar, Kecamatan Nongsa",
+    "area": "Nongsa",
+    "jenis": "Kost",
+    "wa": "6281364534849",
+    "kriteria": "Putri",
+    "harga": 1350000,
+    "hargaAlternatif": [
+      1350000
+    ],
+    "referensi": [
+      "mami",
+      "kos"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-122",
+    "slug": "batu-aji-kost-piramo-1-batu-aji-batam-beralamat-di-mkgr-blok",
+    "no": 122,
+    "alamat": "Kost Piramo 1 Batu Aji Batam beralamat di: MKGR blok fajar baru no 25,26,27 .",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6282169637605",
+    "kriteria": "Putri",
+    "harga": 650000,
+    "hargaAlternatif": [
+      650000
+    ],
+    "referensi": [
+      "mami",
+      "kos"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-124",
+    "slug": "sagulung-kost-gaia-buana-central-park-tipe-1-sagulung-batam",
+    "no": 124,
+    "alamat": "Kost Gaia Buana Central Park Tipe 1 Sagulung Batam beralamat di: Taman Cipta Asri Tahap 1 Blok J no 50 .",
+    "area": "Sagulung",
+    "jenis": "Kost",
+    "wa": "628117709976",
+    "kriteria": "Campur",
+    "harga": 750000,
+    "hargaAlternatif": [
+      750000,
+      1350000
+    ],
+    "referensi": [
+      "mami",
+      "kos"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "duplikat dari baris #145"
+    ]
+  },
+  {
+    "id": "kost-125",
+    "slug": "tiban-tiban-gpi-cendana-2200",
+    "no": 125,
+    "alamat": "Tiban GPI Cendana",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6285296152200",
+    "kriteria": "Belum jelas",
+    "harga": 1100000,
+    "hargaAlternatif": [
+      1100000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  },
+  {
+    "id": "kost-126",
+    "slug": "nagoya-nagoya-seraya-samping-sphinx-1511",
+    "no": 126,
+    "alamat": "nagoya seraya samping sphinx",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6281364081511",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-127",
+    "slug": "batam-center-perumahan-cendana-d2-no-3-batam-center-dekat-pu",
+    "no": 127,
+    "alamat": "Perumahan Cendana D2 No. 3 Batam Center. dekat pusat keramaian, transportasi mudah, dan lingkungan nyaman. (RS Elisabeth Batam Kota, RS Bunda Halimah, Kampus Uniba, Mall Botania2, Pasar Botania, RS AwalBros Botania, Bandara Hang Nadim)",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285272012958",
+    "kriteria": "Campur",
+    "harga": null,
+    "hargaAlternatif": [],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "harga kosong atau tidak valid"
+    ]
+  },
+  {
+    "id": "kost-128",
+    "slug": "nagoya-kost-bebas-belakang-planet-holiday-jodoh-nagoya-1194",
+    "no": 128,
+    "alamat": "KOST BEBAS BELAKANG PLANET HOLIDAY JODOH NAGOYA",
+    "area": "Nagoya",
+    "jenis": "Kost",
+    "wa": "6282169691194",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-129",
+    "slug": "bengkong-bengkong-nusantara-8429",
+    "no": 129,
+    "alamat": "Bengkong Nusantara",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6282274438429",
+    "kriteria": "Campur",
+    "harga": 1150000,
+    "hargaAlternatif": [
+      1150000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-130",
+    "slug": "batam-center-bsi-residence-blok-b2-no-5-batam-center-kelurah",
+    "no": 130,
+    "alamat": "BSI Residence blok B2 no 5 Batam center kelurahan Belian kecamatan Batam kota.",
+    "area": "Batam Center",
+    "jenis": "Kontrakan",
+    "wa": "6281268910353",
+    "kriteria": "Campur",
+    "harga": 2200000,
+    "hargaAlternatif": [
+      2200000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-131",
+    "slug": "batam-center-kawasan-batam-center-perum-anggrek-mas-1-kost-a",
+    "no": 131,
+    "alamat": "Kawasan batam center perum Anggrek Mas 1.Kost As.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6287870701235",
+    "kriteria": "Putra",
+    "harga": 1750000,
+    "hargaAlternatif": [
+      1750000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-132",
+    "slug": "batu-aji-genta-3-belakang-rs-awal-bros-tembesi-perumahan-gri",
+    "no": 132,
+    "alamat": "genta 3 belakang rs awal bros tembesi, perumahan griya surya kharisma blok I no 1 Batu aji",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6289522905758",
+    "kriteria": "Putri",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-133",
+    "slug": "batam-center-batam-center-indah-8508",
+    "no": 133,
+    "alamat": "Batam Center Indah",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285105068508",
+    "kriteria": "Campur",
+    "harga": null,
+    "hargaAlternatif": [],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "harga kosong atau tidak valid"
+    ]
+  },
+  {
+    "id": "kost-134",
+    "slug": "batam-center-marchelia-batam-centre-8088",
+    "no": 134,
+    "alamat": "Marchelia Batam Centre",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285274378088",
+    "kriteria": "Campur",
+    "harga": 1900000,
+    "hargaAlternatif": [
+      1900000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-135",
+    "slug": "batam-center-kost-perum-bunga-raya-botania-1-dekat-bandara-7",
+    "no": 135,
+    "alamat": "Kost Perum. Bunga Raya (Botania 1 - Dekat Bandara)",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282285727676",
+    "kriteria": "Putra",
+    "harga": 1400000,
+    "hargaAlternatif": [
+      1400000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-136",
+    "slug": "bengkong-telaga-indah-dekat-cahaya-garden-dan-sei-panas-2711",
+    "no": 136,
+    "alamat": "telaga indah, Dekat cahaya garden dan sei panas",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281363722711",
+    "kriteria": "Campur",
+    "harga": 1400000,
+    "hargaAlternatif": [
+      1400000,
+      1000000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "Informasi kriteria masih belum jelas",
+    "needsReview": true,
+    "reviewNotes": [
+      "duplikat dari baris #138"
+    ]
+  },
+  {
+    "id": "kost-137",
+    "slug": "bengkong-ruko-greentown-blok-p-no-30-bengkong-laut-kota-bata",
+    "no": 137,
+    "alamat": "ruko greentown blok p no 30 Bengkong Laut, Kota Batam, Kepulauan Riau",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "62895337315779",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "Informasi kriteria masih belum jelas",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-139",
+    "slug": "batu-ampar-jalan-komplek-ruko-seraya-mas-kampung-seraya-kel",
+    "no": 139,
+    "alamat": "Jalan Komplek Ruko Seraya Mas, Kampung Seraya Kel. Batu Ampar, Batam, 29424, Indonesia",
+    "area": "Batu Ampar",
+    "jenis": "Kost",
+    "wa": "6281364081511",
+    "kriteria": "Campur",
+    "harga": 2200000,
+    "hargaAlternatif": [
+      2200000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "maps",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-140",
+    "slug": "batam-center-mediterania-blok-ii6-no-3-4422",
+    "no": 140,
+    "alamat": "Mediterania blok ii6 no.3",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281377884422",
+    "kriteria": "Putri",
+    "harga": 1350000,
+    "hargaAlternatif": [
+      1350000
+    ],
+    "referensi": [
+      "facebook"
+    ],
+    "catatan": "Sudah dihubungi admin",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-141",
+    "slug": "batu-aji-kos-cemara-asri-depan-awal-bros-bt-aji-2762",
+    "no": 141,
+    "alamat": "Kos cemara asri depan awal bros bt aji",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6285761282762",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "Sudah dihubungi admin",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-142",
+    "slug": "lubuk-baja-kost-pondok-keren-pelita-tipe-g-lubuk-baja-batam",
+    "no": 142,
+    "alamat": "Kost Pondok Keren Pelita Tipe G Lubuk Baja Batam beralamat di: Jl. Sriwijaya No. 22A RT-001, RW-004, Kampung Pelita, Lubuk Baja - Batam .",
+    "area": "Lubuk Baja",
+    "jenis": "Kost",
+    "wa": "628117769696",
+    "kriteria": "Campur",
+    "harga": 1700000,
+    "hargaAlternatif": [
+      1700000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-143",
+    "slug": "batam-center-kost-dl-koszy-kda-tipe-eksclusive-batam-kota-ba",
+    "no": 143,
+    "alamat": "Kost Dl Koszy Kda Tipe Eksclusive Batam Kota Batam beralamat di: Perumahan KDA, Cluster Nuri 1 no 12, RT03/RW34, Belian, Batam Kota, Kota Batam, Kepulauan Riau 29433 .",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281364534849",
+    "kriteria": "Putri",
+    "harga": 1550000,
+    "hargaAlternatif": [
+      1550000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-144",
+    "slug": "batam-center-kost-a1-tipe-standard-sei-beduk-batam-beralamat",
+    "no": 144,
+    "alamat": "Kost A1 Tipe Standard Sei Beduk Batam beralamat di: Ruko Bukit Permai Blok A No. 1 RT 006 RW 017, Tj. Piayu, Kec. Sei Beduk, Kota Batam, Kepulauan Riau 29433, Indonesia .",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281266681751",
+    "kriteria": "Putri",
+    "harga": 1650000,
+    "hargaAlternatif": [
+      1650000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-146",
+    "slug": "tiban-kost-marlene-tipe-d-sekupang-batam-beralamat-di-jl-tj",
+    "no": 146,
+    "alamat": "Kost Marlene Tipe D Sekupang Batam beralamat di: Jl. Tj. Riau No.b-43, Tiban Baru, Kec. Sekupang, Kota Batam, Kepulauan Riau 29424, Indonesia .",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281991113788",
+    "kriteria": "Campur",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-147",
+    "slug": "batam-center-bida-asri-1-blok-c1-20-batam-center-2044",
+    "no": 147,
+    "alamat": "Bida Asri 1 blok C1/20, batam center.",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282371842044",
+    "kriteria": "Putra",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-148",
+    "slug": "batam-center-jalan-perumahan-taman-mediterania-blok-hh-6-no",
+    "no": 148,
+    "alamat": "Jalan Perumahan Taman Mediterania Blok Hh 6 No. 3a, Baloi Permai, KOTA BATAM, BATAM KOTA, KEPULAUAN RIAU, ID, 29413",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6282173109227",
+    "kriteria": "Putri",
+    "harga": 1000000,
+    "hargaAlternatif": [
+      1000000
+    ],
+    "referensi": [],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-149",
+    "slug": "batam-center-batam-centre-dekat-dg-rs-awal-bros-botania-mb2",
+    "no": 149,
+    "alamat": "batam centre dekat dg rs awal bros botania, mb2,bandara hangdamin",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6281363971397",
+    "kriteria": "Campur",
+    "harga": 1600000,
+    "hargaAlternatif": [
+      1600000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-150",
+    "slug": "bengkong-bengkong-indah-2-gg-sakura-blok-f-87-belakang-super",
+    "no": 150,
+    "alamat": "Bengkong indah 2, Gg sakura blok f 87, Belakang supermarket bengkong indah",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6281364803597",
+    "kriteria": "Campur",
+    "harga": 800000,
+    "hargaAlternatif": [
+      800000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-151",
+    "slug": "batu-besar-di-depan-sdit-al-farabi-kampung-melayu-batu-besar",
+    "no": 151,
+    "alamat": "Di depan SDIT Al-Farabi, Kampung Melayu, Batu Besar (arah pantai sekilak)",
+    "area": "Batu Besar",
+    "jenis": "Kontrakan",
+    "wa": "6281270968884",
+    "kriteria": "Campur",
+    "harga": 1500000,
+    "hargaAlternatif": [
+      1500000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-152",
+    "slug": "bengkong-lokasi-sei-panas-pasir-putih-7888",
+    "no": 152,
+    "alamat": "Lokasi Sei Panas - Pasir Putih",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6285318237888",
+    "kriteria": "Campur",
+    "harga": 900000,
+    "hargaAlternatif": [
+      900000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-153",
+    "slug": "tiban-kompleks-tiban-gajah-mada-blok-f-no-1-9-1313",
+    "no": 153,
+    "alamat": "Kompleks Tiban Gajah Mada Blok F no. 1-9",
+    "area": "Tiban",
+    "jenis": "Kost",
+    "wa": "6281170001313",
+    "kriteria": "Campur",
+    "harga": 1800000,
+    "hargaAlternatif": [
+      1800000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-154",
+    "slug": "bengkong-tanjung-buntung-batam-2745",
+    "no": 154,
+    "alamat": "TANJUNG BUNTUNG - BATAM",
+    "area": "Bengkong",
+    "jenis": "Kost",
+    "wa": "6289524902745",
+    "kriteria": "Belum jelas",
+    "harga": 2000000,
+    "hargaAlternatif": [
+      2000000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  },
+  {
+    "id": "kost-155",
+    "slug": "batam-center-sebelah-rm-dendeng-baka-central-sukajadi-7373",
+    "no": 155,
+    "alamat": "Sebelah RM. Dendeng Baka Central Sukajadi",
+    "area": "Batam Center",
+    "jenis": "Kost",
+    "wa": "6285181917373",
+    "kriteria": "Campur",
+    "harga": 750000,
+    "hargaAlternatif": [
+      750000
+    ],
+    "referensi": [
+      "https://www.facebook.com/share/p/14ykajhw8xu/?mibextid=wwxifr"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-156",
+    "slug": "lubuk-baja-baloi-mas-asri-blok-topas-no-29-baloi-indah-kec-l",
+    "no": 156,
+    "alamat": "Baloi mas, asri blok topas No.29, Baloi Indah, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29432",
+    "area": "Lubuk Baja",
+    "jenis": "Kost",
+    "wa": "6282169691194",
+    "kriteria": "Campur",
+    "harga": 2400000,
+    "hargaAlternatif": [
+      2400000
+    ],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": false,
+    "reviewNotes": []
+  },
+  {
+    "id": "kost-157",
+    "slug": "batu-aji-perumahan-buana-raja-residence-blok-d-no-7-5082",
+    "no": 157,
+    "alamat": "Perumahan Buana raja residence blok D no 7",
+    "area": "Batu Aji",
+    "jenis": "Kost",
+    "wa": "6281270085082",
+    "kriteria": "Belum jelas",
+    "harga": null,
+    "hargaAlternatif": [],
+    "referensi": [
+      "link"
+    ],
+    "catatan": "",
+    "needsReview": true,
+    "reviewNotes": [
+      "harga kosong atau tidak valid",
+      "kriteria putra/putri/campur belum jelas"
+    ]
+  }
+]

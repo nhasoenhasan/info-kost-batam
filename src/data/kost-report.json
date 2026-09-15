@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-09-15T09:04:36.708Z",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/export?format=csv&gid=0",
+  "totalRows": 157,
+  "kept": 147,
+  "withBudget": 144,
+  "withWa": 147,
+  "byArea": {
+    "Bengkong": 31,
+    "Nagoya": 14,
+    "Sekupang": 4,
+    "Batam Center": 45,
+    "Batu Ampar": 5,
+    "Batu Aji": 26,
+    "Tiban": 8,
+    "Botania": 4,
+    "Nongsa": 2,
+    "Piayu": 2,
+    "Lubuk Baja": 3,
+    "Sagulung": 2,
+    "Batu Besar": 1
+  },
+  "dropped": [
+    {
+      "no": 123,
+      "alamat": "",
+      "reason": "alamat/no kosong"
+    }
+  ],
+  "duplicatesMerged": [
+    {
+      "keptNo": 12,
+      "mergedNo": 41,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1800000
+      ]
+    },
+    {
+      "keptNo": 53,
+      "mergedNo": 69,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        900000
+      ]
+    },
+    {
+      "keptNo": 4,
+      "mergedNo": 93,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        800000,
+        850000
+      ]
+    },
+    {
+      "keptNo": 77,
+      "mergedNo": 96,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1000000,
+        700000
+      ]
+    },
+    {
+      "keptNo": 15,
+      "mergedNo": 107,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1000000
+      ]
+    },
+    {
+      "keptNo": 82,
+      "mergedNo": 108,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1000000
+      ]
+    },
+    {
+      "keptNo": 112,
+      "mergedNo": 118,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1500000,
+        1600000
+      ]
+    },
+    {
+      "keptNo": 136,
+      "mergedNo": 138,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        1400000,
+        1000000
+      ]
+    },
+    {
+      "keptNo": 124,
+      "mergedNo": 145,
+      "reason": "area + alamat identik",
+      "hargaAlternatif": [
+        750000,
+        1350000
+      ]
+    }
+  ],
+  "areaOverrides": [
+    {
+      "no": 82,
+      "from": "Belian",
+      "to": "Batam Center",
+      "reason": "Label sheet Belian vs Batam Center untuk alamat yang sama"
+    },
+    {
+      "no": 108,
+      "from": "Batam Center",
+      "to": "Batam Center",
+      "reason": "Label sheet Belian vs Batam Center untuk alamat yang sama"
+    },
+    {
+      "no": 124,
+      "from": "Lubuk Baja",
+      "to": "Sagulung",
+      "reason": "Alamat menyebut Taman Cipta Asri / Sagulung, label sheet Lubuk Baja & Batu Aji"
+    },
+    {
+      "no": 145,
+      "from": "Batu Aji",
+      "to": "Sagulung",
+      "reason": "Alamat menyebut Taman Cipta Asri / Sagulung, label sheet Lubuk Baja & Batu Aji"
+    }
+  ],
+  "needsReview": [
+    {
+      "no": 4,
+      "slug": "sekupang-perum-edofa-gardenia-blok-f9-no-12-b-4204",
+      "notes": [
+        "duplikat dari baris #93"
+      ]
+    },
+    {
+      "no": 7,
+      "slug": "batam-center-mitra-raya-2-batam-center-5228",
+      "notes": [
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    },
+    {
+      "no": 21,
+      "slug": "bengkong-bukit-beruntung-2177",
+      "notes": [
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    },
+    {
+      "no": 63,
+      "slug": "sekupang-lokasi-strategis-dekat-dengan-galangan-kapal-2401",
+      "notes": [
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    },
+    {
+      "no": 77,
+      "slug": "bengkong-bengkong-indah-bawah-9076",
+      "notes": [
+        "duplikat dari baris #96"
+      ]
+    },
+    {
+      "no": 112,
+      "slug": "batam-center-taman-mediterania-batam-center-7885",
+      "notes": [
+        "duplikat dari baris #118"
+      ]
+    },
+    {
+      "no": 124,
+      "slug": "sagulung-kost-gaia-buana-central-park-tipe-1-sagulung-batam",
+      "notes": [
+        "duplikat dari baris #145"
+      ]
+    },
+    {
+      "no": 125,
+      "slug": "tiban-tiban-gpi-cendana-2200",
+      "notes": [
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    },
+    {
+      "no": 127,
+      "slug": "batam-center-perumahan-cendana-d2-no-3-batam-center-dekat-pu",
+      "notes": [
+        "harga kosong atau tidak valid"
+      ]
+    },
+    {
+      "no": 133,
+      "slug": "batam-center-batam-center-indah-8508",
+      "notes": [
+        "harga kosong atau tidak valid"
+      ]
+    },
+    {
+      "no": 136,
+      "slug": "bengkong-telaga-indah-dekat-cahaya-garden-dan-sei-panas-2711",
+      "notes": [
+        "duplikat dari baris #138"
+      ]
+    },
+    {
+      "no": 154,
+      "slug": "bengkong-tanjung-buntung-batam-2745",
+      "notes": [
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    },
+    {
+      "no": 157,
+      "slug": "batu-aji-perumahan-buana-raja-residence-blok-d-no-7-5082",
+      "notes": [
+        "harga kosong atau tidak valid",
+        "kriteria putra/putri/campur belum jelas"
+      ]
+    }
+  ]
+}
