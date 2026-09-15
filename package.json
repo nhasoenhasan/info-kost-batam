@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "sync": "node scripts/sync-kost.mjs",
+    "sync": "node --env-file-if-exists=.env.local scripts/sync-kost.mjs",
     "e2e": "playwright test"
   },
   "dependencies": {

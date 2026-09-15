@@ -80,7 +80,6 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
       ),
     },
     { label: 'Referensi', value: kost.referensi.length ? kost.referensi.join(', ') : '—' },
-    { label: 'Baris di spreadsheet', value: <span className="font-mono">#{kost.no}</span> },
   ]
 
   return (
@@ -115,7 +114,7 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
 
       {kost.hargaAlternatif.length > 1 && (
         <p className="mt-2 text-sm text-flag">
-          Catatan: spreadsheet sumber juga menyebut{' '}
+          Catatan: sumber data juga menyebut{' '}
           {kost.hargaAlternatif
             .filter((h) => h !== kost.harga)
             .map((h) => formatRupiah(h))

@@ -14,11 +14,11 @@
 
 ### 1.1 Sumber data (terverifikasi 2026-09-15)
 
-- **Spreadsheet ID:** `1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q`
+- **Spreadsheet ID:** `<SHEET_ID_DISEMBUNYIKAN>`
 - **Jumlah tab:** 1 (hanya `gid=0`) → tidak perlu loop multi-sheet
 - **Mode baca:** publik. `.../htmlview` **tidak bisa** di-extract tooling (render kosong), tapi export CSV **berhasil tanpa auth**:
   ```
-  https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/export?format=csv&gid=0
+  https://docs.google.com/spreadsheets/d/<SHEET_ID_DISEMBUNYIKAN>/export?format=csv&gid=0
   ```
   → HTTP 200, 21.552 bytes, 206 baris. **Ini jalur sinkronisasi yang dipakai.** Tidak perlu API key, tidak perlu OAuth.
 - **Header tabel ada di baris 26** (baris 1–25 = judul, panduan, dan 5 blok disclaimer). Jangan hardcode nomor baris — deteksi baris yang mengandung `No` + `Alamat`.
@@ -812,7 +812,7 @@ import { parseBudget, parseKriteria, parseJenis } from './lib/budget.mjs';
 import { buildSlug } from './lib/slug.mjs';
 import { mergeDuplicates } from './lib/dedupe.mjs';
 
-const SHEET_ID = '1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q';
+const SHEET_ID = '<SHEET_ID_DISEMBUNYIKAN>';
 const SOURCE_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 const OUT_JSON = new URL('../src/data/kost.json', import.meta.url);
 const OUT_REPORT = new URL('../src/data/kost-report.json', import.meta.url);

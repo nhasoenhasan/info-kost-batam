@@ -15,8 +15,14 @@ import { buildSlug } from './lib/slug.mjs'
 import { mergeDuplicates } from './lib/dedupe.mjs'
 import { tidyAlamat, tidyCatatan } from './lib/text.mjs'
 
-const SHEET_ID = '1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q'
-const SOURCE_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`
+const SOURCE_URL = process.env.SHEET_CSV_URL
+if (!SOURCE_URL) {
+  throw new Error(
+    'SHEET_CSV_URL belum diisi.\n' +
+      'Copy .env.example jadi .env.local lalu isi URL CSV export spreadsheet.\n' +
+      'URL-nya sengaja tidak disimpan di repo supaya tidak ada orang lain yang punya akses ke spreadsheet.',
+  )
+}
 const OUT_JSON = new URL('../src/data/kost.json', import.meta.url)
 const OUT_REPORT = new URL('../src/data/kost-report.json', import.meta.url)
 
@@ -159,7 +165,8 @@ const byArea = records.reduce((acc, r) => {
 
 const report = {
   generatedAt: new Date().toISOString(),
-  sourceUrl: SOURCE_URL,
+  // tidak menyimpan URL/ID sumber: repo ini publik, dan spreadsheet tidak untuk dibagikan
+  source: 'google-sheets-csv',
   totalRows: dataRows.length,
   kept: records.length,
   withBudget: records.filter((r) => r.harga !== null).length,

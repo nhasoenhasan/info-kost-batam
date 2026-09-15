@@ -3,6 +3,15 @@ import type { KostRecord } from './types'
 export const SITE_NAME = 'INFO KOST BATAM'
 export const SITE_URL = 'https://kost.nhasan.tech'
 
+/**
+ * Nomor WhatsApp admin untuk laporan data keliru / permintaan hapus listing.
+ *
+ * Sengaja null selama belum ada kanal resmi: UI akan menampilkan penjelasan netral
+ * daripada memasang nomor yang belum tentu benar. Isi dengan format 62… (mis. '6281234567890')
+ * kalau kanal laporan sudah siap — satu perubahan ini cukup, tidak perlu sentuh komponen.
+ */
+export const ADMIN_WA: string | null = null
+
 const BRAND_TAIL = `\n\n(Dari ${SITE_NAME})`
 
 /** Pesan WA yang sudah berisi konteks, supaya pemilik langsung paham maksudnya. */

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { areasByCount, report } from '@/lib/kost'
+import { ADMIN_WA } from '@/lib/phone'
 
 export const metadata: Metadata = {
   title: 'Tentang & disclaimer',
@@ -15,6 +16,9 @@ const tanggal = new Intl.DateTimeFormat('id-ID', {
   year: 'numeric',
 }).format(new Date(report.generatedAt))
 
+const pesanLaporan =
+  'Halo admin INFO KOST BATAM, saya mau lapor data yang keliru di website. Alamat kostnya: '
+
 export default function TentangPage() {
   return (
     <div className="mx-auto w-full max-w-2xl px-5 py-10 sm:px-8 sm:py-14">
@@ -22,16 +26,17 @@ export default function TentangPage() {
 
       <div className="mt-8 space-y-6 text-[15px] leading-relaxed">
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">Dari mana datanya</h2>
+          <h2 className="font-mono text-xs tracking-wide uppercase text-muted">Dari mana datanya</h2>
           <p className="mt-2">
-            Semua {report.kept} listing di sini direkap dari postingan publik di Facebook dan catatan admin
-            — bukan hasil survei lapangan, dan bukan data pribadi siapa pun. Setiap listing menyertakan
-            nomor baris spreadsheet sumbernya supaya bisa ditelusuri.
+            Semua {report.kept} listing di sini direkap dari postingan publik di Facebook dan catatan
+            admin — bukan hasil survei lapangan, dan bukan data pribadi siapa pun. Daftar mentahnya
+            disimpan internal dan tidak dibagikan ke publik, supaya nomor kontak dan catatan pemilik kost
+            tidak tersebar lebih jauh dari yang sudah mereka posting sendiri.
           </p>
         </section>
 
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">
+          <h2 className="font-mono text-xs tracking-wide uppercase text-muted">
             Yang perlu kamu tahu sebelum menghubungi
           </h2>
           <ul className="mt-2 list-disc space-y-1.5 pl-5">
@@ -50,24 +55,39 @@ export default function TentangPage() {
         </section>
 
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">
+          <h2 className="font-mono text-xs tracking-wide uppercase text-muted">
             Melaporkan data yang keliru
           </h2>
           <p className="mt-2">
             Data direkap manual, jadi pasti ada kemungkinan salah. Dari {report.totalRows} baris yang
-            diperiksa, {report.needsReview.length} listing masih butuh verifikasi (nomor atau harga belum
-            lengkap, atau ada dua harga berbeda untuk alamat yang sama). Kalau kamu menemukan info yang
-            salah, sudah tidak berlaku, atau ingin listingmu dihapus,
-            hubungi admin lewat spreadsheet sumber atau WhatsApp yang tertera, dan sebutkan alamat kostnya.
+            diperiksa, {report.needsReview.length} listing masih butuh verifikasi — misalnya nomor atau
+            harga belum lengkap, atau ada dua harga berbeda untuk alamat yang sama.
           </p>
-          <p className="mt-2">
-            Pemilik kost yang ingin listing-nya dihapus juga bisa minta langsung — data akan ditandai
-            dihapus di spreadsheet dan hilang dari website pada sinkronisasi berikutnya.
+          {ADMIN_WA ? (
+            <p className="mt-3">
+              <a
+                href={`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(pesanLaporan)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md border border-hairline px-4 py-2.5 text-sm font-medium hover:border-ink"
+              >
+                Lapor ke admin lewat WhatsApp
+              </a>
+            </p>
+          ) : (
+            <p className="mt-2 text-muted">
+              Kanal resmi untuk melaporkan data keliru sedang disiapkan. Sementara ini, koreksi dan
+              penghapusan listing dilakukan berkala oleh admin saat pembaruan data.
+            </p>
+          )}
+          <p className="mt-3">
+            Pemilik kost yang ingin listing-nya dihapus juga bisa mengajukan permintaan — data akan
+            ditandai dihapus dan hilang dari website pada pembaruan berikutnya.
           </p>
         </section>
 
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">Cara pakai</h2>
+          <h2 className="font-mono text-xs tracking-wide uppercase text-muted">Cara pakai</h2>
           <p className="mt-2">
             Gunakan pencarian dan filter di{' '}
             <Link href="/" className="underline">
@@ -80,7 +100,7 @@ export default function TentangPage() {
         </section>
 
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">Cakupan area</h2>
+          <h2 className="font-mono text-xs tracking-wide uppercase text-muted">Cakupan area</h2>
           <p className="mt-2">
             {areasByCount.map((a, i) => (
               <span key={a.area}>
@@ -97,16 +117,8 @@ export default function TentangPage() {
 
         <section className="border-t border-hairline pt-4 text-sm text-muted">
           <p>
-            Data terakhir disinkronkan {tanggal}. Sumber:{' '}
-            <a
-              href="https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/htmlview"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              spreadsheet INFO KOST BATAM
-            </a>
-            .
+            Data terakhir diperbarui {tanggal}. Setiap listing menampilkan nomor kontak pemilik kostnya
+            sendiri — hubungi langsung nomor tersebut, bukan lewat admin.
           </p>
         </section>
       </div>

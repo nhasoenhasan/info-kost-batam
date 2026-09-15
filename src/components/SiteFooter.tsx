@@ -21,18 +21,9 @@ export function SiteFooter() {
           pemilik sebelum transfer atau DP.
         </p>
         <p>
-          Data terakhir disinkronkan {tanggal}. Ada info yang salah atau sudah tidak berlaku?{' '}
-          <a
-            href={`https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/htmlview`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Lihat spreadsheet sumber
-          </a>{' '}
-          atau{' '}
+          Data terakhir diperbarui {tanggal}. Ada info yang keliru atau sudah tidak berlaku?{' '}
           <Link href="/tentang/" className="underline">
-            baca selengkapnya di halaman Tentang
+            Lihat cara melaporkannya di halaman Tentang
           </Link>
           .
         </p>

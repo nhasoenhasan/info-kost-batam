@@ -1,8 +1,8 @@
 # INFO KOST BATAM
 
-Website direktori kost & kontrakan di Batam, dibangun dari spreadsheet
-["🏠 INFO KOST BATAM"](https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/htmlview)
-(147 listing, hasil rekap postingan publik Facebook).
+Website direktori kost & kontrakan di Batam — 147 listing hasil rekap postingan publik
+Facebook, dikelola dari spreadsheet internal yang **tidak dibagikan ke publik**
+(lihat [Akses spreadsheet](#akses-spreadsheet)).
 
 **Live:** https://kost.nhasan.tech (subdomain dari VPS `web-personal`)
 
@@ -21,8 +21,9 @@ filter bisa langsung dikirim ke teman lewat WhatsApp.
 
 ```bash
 pnpm install
-pnpm sync     # tarik data terbaru dari Google Sheets → src/data/kost.json
-pnpm dev      # http://localhost:3000
+cp .env.example .env.local   # lalu isi SHEET_CSV_URL (lihat "Akses spreadsheet")
+pnpm sync                    # tarik data terbaru → src/data/kost.json
+pnpm dev                     # http://localhost:3000
 ```
 
 Perintah lain:
@@ -41,6 +42,28 @@ Preview hasil build seperti di produksi:
 pnpm build && cd out && python3 -m http.server 4321
 ```
 
+## Akses spreadsheet
+
+Spreadsheet sumber **sengaja tidak dipublikasikan**: URL dan ID-nya tidak ada di repo,
+tidak ada di HTML yang dikirim ke browser, dan tidak ada link apa pun dari website.
+
+- URL-nya disimpan di `.env.local` (lokal, di-*gitignore*) sebagai `SHEET_CSV_URL`.
+- `pnpm sync` membaca variabel itu. Kalau kosong, script berhenti dengan pesan yang jelas
+  alih-alih menarik data.
+- Yang **dikirim ke publik** hanya hasil rekap: alamat, area, kriteria, kisaran harga, dan
+  nomor WhatsApp pemilik yang memang sudah diposting publik oleh pemiliknya sendiri.
+
+Praktik yang dianjurkan:
+
+1. Di Google Sheets, set **Share → Restricted** supaya hanya akunmu yang bisa membuka daftar mentahnya.
+2. Ambil URL CSV-nya lewat **File → Share → Publish to web** (format CSV) untuk sheet
+   yang datanya memang boleh dibaca mesin, lalu isi ke `.env.local`.
+3. Jangan menempelkan link spreadsheet di postingan Facebook, bio, atau pesan WhatsApp —
+   begitu link itu tersebar, membatasinya kembali jadi sulit.
+
+Catatan penting: mode `/htmlview` **tidak bisa** diparsing tool otomatis, jadi jangan
+diganti ke htmlview. CSV export jalan tanpa API key dan tanpa OAuth.
+
 ## Struktur
 
 ```
@@ -55,23 +78,14 @@ scripts/
   lib/text.mjs         rapikan teks alamat
 src/
   data/kost.json       hasil sync, di-commit (yang dibaca website)
-  data/kost-report.json laporan kualitas data
+  data/kost-report.json laporan kualitas data (tanpa URL sumber)
   lib/                 tipe, loader, filter murni, format, SEO
   components/          kartu, tombol WA, filter, header/footer
   app/                 halaman (App Router)
 tests/unit/            unit test
 ```
 
-## Sumber & pipeline data
-
-Spreadsheet dibaca lewat **export CSV publik**:
-
-```
-https://docs.google.com/spreadsheets/d/1P9lqbRjuUd03DVcImQQwzSKCIaR7f5FvzywW0ou1G_Q/export?format=csv&gid=0
-```
-
-Catatan penting: mode `/htmlview` **tidak bisa** diparsing tool otomatis, jadi jangan
-diganti ke htmlview. CSV export jalan tanpa API key dan tanpa OAuth.
+## Pipeline data
 
 Yang dilakukan `pnpm sync`:
 
@@ -102,6 +116,10 @@ kost minta listing-nya diturunkan.
 
 Kalau `pnpm sync` gagal dengan "lokasi tidak dikenal", artinya ada nilai kolom Lokasi
 baru yang belum ada di `ALIASES` — tambahkan pemetaannya lalu jalankan ulang.
+
+**Kanal laporan pengunjung:** isi `ADMIN_WA` di `src/lib/phone.ts` dengan nomor WhatsApp
+admin. Selama masih `null`, halaman Tentang menampilkan penjelasan netral alih-alih
+nomor yang belum tentu benar.
 
 ## Data quality
 
@@ -150,6 +168,10 @@ Di DNS: tambahkan record `A` dengan nama `kost` → `43.128.113.94`.
 
 Secrets GitHub yang dipakai: `DEPLOY_KEY` (sama dengan `web-personal`) dan `SNYK_TOKEN`.
 
+Catatan Snyk: workflow memakai `--all-projects` karena scaffold Next.js meninggalkan
+`pnpm-workspace.yaml` (allowlist `ignoredBuiltDependencies`); tanpa flag itu Snyk gagal
+dengan "Both pnpm-lock.yaml and pnpm-workspace.yaml were found".
+
 ## Keputusan desain
 
 - **Light-first + dark otomatis** (`prefers-color-scheme`), bukan toggle: audiensnya
@@ -163,6 +185,8 @@ Secrets GitHub yang dipakai: `DEPLOY_KEY` (sama dengan `web-personal`) dan `SNYK
   menampilkan harga basi sebagai fakta. Harga tetap ada di teks halaman.
 - **Slide pesan WA terisi otomatis** (alamat + asal data) supaya pemilik langsung paham
   dan pengunjung tidak perlu mengetik.
+- **Tanpa jejak spreadsheet di halaman publik.** Yang tampil hanya hasil rekap, bukan
+  sumbernya — termasuk tidak menautkan atau menyebut URL spreadsheet mana pun.
 
 ## Yang belum ada
 

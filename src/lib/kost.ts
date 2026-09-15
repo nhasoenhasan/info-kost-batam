@@ -5,7 +5,8 @@ import type { KostListItem, KostRecord } from './types'
 export const allKosts = records as KostRecord[]
 export const report = reportData as {
   generatedAt: string
-  sourceUrl: string
+  /** label jenis sumber data, tanpa URL/ID spreadsheet (repo ini publik) */
+  source: string
   totalRows: number
   kept: number
   withBudget: number
