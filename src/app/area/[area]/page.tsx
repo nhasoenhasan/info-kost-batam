@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { WaButton } from '@/components/WaButton'
-import { areaBySlugParam, areaStats, byArea, slugifyArea } from '@/lib/kost'
-import { areasByCount } from '@/lib/kost'
+import { KostCard } from '@/components/KostCard'
+import { areasByCount, areaBySlugParam, areaStats, byArea, slugifyArea } from '@/lib/kost'
 import { formatRupiah, breadcrumbJsonLd, itemListJsonLd } from '@/lib/seo'
 
 export const dynamicParams = false
@@ -47,11 +46,11 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
   const list = byArea(area).sort((a, b) => (a.harga ?? Infinity) - (b.harga ?? Infinity))
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-12">
-      <nav aria-label="Breadcrumb" className="text-sm text-muted">
+    <div className="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+      <nav aria-label="Breadcrumb" className="type-micro text-muted">
         <ol className="flex items-center gap-2">
           <li>
-            <Link href="/" className="hover:underline">
+            <Link href="/" className="hover:text-ink">
               Semua kost
             </Link>
           </li>
@@ -60,40 +59,26 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
         </ol>
       </nav>
 
-      <h1 className="mt-4 text-2xl leading-snug font-semibold tracking-tight sm:text-3xl">
-        Kost di {area}, Batam
-      </h1>
-      <p className="mt-3 max-w-[52ch] text-sm text-muted">
+      <h1 className="type-section mt-6 text-[1.75rem] sm:text-[2rem]">Kost di {area}, Batam</h1>
+      <p className="type-body measure mt-4 text-muted">
         {stats.count} listing tercatat di {area}
         {stats.minHarga && stats.maxHarga
-          ? `, dengan harga ${formatRupiah(stats.minHarga)} sampai ${formatRupiah(stats.maxHarga)} per bulan`
+          ? `, harganya ${formatRupiah(stats.minHarga)} sampai ${formatRupiah(stats.maxHarga)} per bulan`
           : ''}
         . Diurutkan dari yang termurah. Semua info berasal dari rekap postingan publik — konfirmasi harga
         dan ketersediaan langsung ke pemilik.
       </p>
 
-      <ul className="mt-10 divide-y divide-hairline border-y border-hairline">
+      <p className="type-micro mt-10 text-muted">Daftar</p>
+      <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((k) => (
-          <li key={k.id} className="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:gap-6">
-            <div className="min-w-0 flex-1">
-              <Link href={`/kost/${k.slug}/`} className="text-[15px] leading-snug hover:underline">
-                {k.alamat}
-              </Link>
-              <p className="mt-1 font-mono text-xs text-muted">
-                {k.jenis} · {k.kriteria}
-                {k.harga !== null ? ` · ${formatRupiah(k.harga)}/bulan` : ' · harga belum ada'}
-              </p>
-            </div>
-            <div className="shrink-0">
-              <WaButton kost={k} label="Chat pemilik" variant="outline" />
-            </div>
-          </li>
+          <KostCard key={k.id} kost={k} />
         ))}
-      </ul>
+      </div>
 
-      <p className="mt-8 text-sm">
-        <Link href="/" className="underline">
-          Lihat semua area dan filter budget
+      <p className="mt-10 border-t border-hairline pt-5">
+        <Link href="/" className="type-micro underline-offset-4 hover:underline">
+          Lihat semua area dan filter budget →
         </Link>
       </p>
 

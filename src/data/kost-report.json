@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T16:38:34.614Z",
+  "generatedAt": "2026-09-15T17:27:54.679Z",
   "source": "google-sheets-csv",
   "totalRows": 157,
   "kept": 147,
@@ -104,6 +104,62 @@
         750000,
         1350000
       ]
+    }
+  ],
+  "suspectDuplicates": [
+    {
+      "noA": 110,
+      "noB": 113,
+      "similarity": 1,
+      "sameWa": true,
+      "sameHarga": true,
+      "alamatA": "Cluster Saffron Botania, Blok C No. 11",
+      "alamatB": "Cluster Saffron Botania, Blok C No.11."
+    },
+    {
+      "noA": 28,
+      "noB": 50,
+      "similarity": 0.83,
+      "sameWa": false,
+      "sameHarga": true,
+      "alamatA": "TAMAN HANG TUAH BLOK A6 NO.06 BATAM CENTRE",
+      "alamatB": "TAMAN HANG TUAH BATAM CENTRE"
+    },
+    {
+      "noA": 7,
+      "noB": 36,
+      "similarity": 0.8,
+      "sameWa": false,
+      "sameHarga": true,
+      "alamatA": "Mitra Raya 2 BATAM CENTER !",
+      "alamatB": "AREA Mitra Raya 2 BATAM CENTER"
+    },
+    {
+      "noA": 62,
+      "noB": 114,
+      "similarity": 0.8,
+      "sameWa": false,
+      "sameHarga": true,
+      "alamatA": "ruko mega legenda blok E3 35",
+      "alamatB": "Komplek ruko mega legenda blok A1 no 31"
+    },
+    {
+      "noA": 34,
+      "noB": 106,
+      "similarity": 0.75,
+      "sameWa": true,
+      "sameHarga": false,
+      "alamatA": "Perumahan Greenland, Batam Centre",
+      "alamatB": "Perumahan Greenland batam"
+    },
+    {
+      "noA": 16,
+      "noB": 17,
+      "similarity": 0.6,
+      "sameWa": true,
+      "sameHarga": true,
+      "alamatA": "Perumahan Bambu Kuning Puskopkar A13 No 17, Batu Aji, Belakang UNRIKA dan RSUD EMBUNG FATIMAH",
+      "alamatB": "Perum Puskopkar Bambu Kuning A13 Nomor 17 Belakang UNRIKA RSUD Embung Fatimah"
     }
   ],
   "areaOverrides": [

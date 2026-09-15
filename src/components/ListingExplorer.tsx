@@ -18,9 +18,9 @@ const PAGE_SIZE = 24
 const KRITERIA: Kriteria[] = ['Putra', 'Putri', 'Campur', 'Belum jelas']
 const JENIS: Jenis[] = ['Kost', 'Kontrakan']
 const SORTS: { value: SortOption; label: string }[] = [
-  { value: 'relevan', label: 'Urutan data' },
-  { value: 'termurah', label: 'Termurah' },
-  { value: 'termahal', label: 'Termahal' },
+  { value: 'relevan', label: 'urutan data' },
+  { value: 'termurah', label: 'termurah' },
+  { value: 'termahal', label: 'termahal' },
 ]
 
 type AreaOption = { area: string; count: number }
@@ -37,7 +37,6 @@ function readFiltersFromUrl(validAreas: string[]): FilterState {
   const sort = sp.get('sort') as SortOption | null
   return {
     q: sp.get('q') ?? '',
-    // nilai dari URL disaring ke opsi yang dikenal — URL bisa diketik manual
     area: sp.getAll('area').filter((a) => validAreas.includes(a)),
     jenis: sp.getAll('jenis').filter((j) => JENIS.includes(j as Jenis)) as Jenis[],
     kriteria: sp.getAll('kriteria').filter((k) => KRITERIA.includes(k as Kriteria)) as Kriteria[],
@@ -58,8 +57,7 @@ function writeFiltersToUrl(f: FilterState) {
   if (f.sort !== 'relevan') sp.set('sort', f.sort)
 
   const qs = sp.toString()
-  // history.replaceState (bukan router) supaya URL bisa di-share tanpa memicu
-  // navigasi/refetch — halaman ini statis, tidak ada data server yang perlu diambil ulang.
+  // history.replaceState (bukan router): URL bisa di-share tanpa navigasi/refetch.
   window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname)
 }
 
@@ -84,8 +82,7 @@ export function ListingExplorer({ items, areas }: { items: KostListItem[]; areas
     if (ready) writeFiltersToUrl(filters)
   }, [filters, ready])
 
-  // Pagination di-reset di setter filter, bukan lewat effect — menghindari
-  // cascading render dan bikin satu perubahan filter = satu render.
+  // Pagination di-reset di setter filter, bukan lewat effect.
   const updateFilters = useCallback((updater: (prev: FilterState) => FilterState) => {
     setFilters(updater)
     setVisible(PAGE_SIZE)
@@ -100,34 +97,37 @@ export function ListingExplorer({ items, areas }: { items: KostListItem[]; areas
   const activeCount = activeFilterCount(filters)
 
   return (
-    <section id="daftar" className="space-y-6">
-      <div role="search" className="space-y-4">
-        <label htmlFor="cari-kost" className="sr-only">
-          Cari kost berdasarkan alamat atau area
-        </label>
-        <div className="relative">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 20 20"
-            fill="none"
-            className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted"
-          >
-            <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.5" />
-            <path d="m13.5 13.5 4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
+    <section id="daftar" className="space-y-10">
+      <div role="search" className="space-y-3">
+        <div>
+          <label htmlFor="cari-kost" className="sr-only">
+            Cari kost berdasarkan alamat atau area
+          </label>
           <input
             id="cari-kost"
             type="search"
             value={filters.q}
             onChange={(e) => updateFilters((f) => ({ ...f, q: e.target.value }))}
-            placeholder="Cari area, jalan, atau patokan — mis. Bengkong, dekat UNRIKA"
-            className="w-full rounded-md border border-hairline bg-transparent py-3 pr-4 pl-10 text-base placeholder:text-muted"
+            placeholder="Cari area, jalan, atau patokan"
+            className="type-body w-full border-0 border-b border-hairline bg-transparent py-3 placeholder:text-muted focus:border-ink focus:outline-none"
           />
         </div>
 
-        <div className="space-y-2">
-          <p className="font-mono text-xs tracking-wide uppercase text-muted">Area</p>
-          <div className="chip-row">
+        {/* Semua grup filter pakai pola yang sama: label inline + chip yang wrap.
+            Chip "Semua" di depan sengaja ada: tanpa satu pun chip aktif, deretan
+            teks ini tidak terbaca sebagai kontrol — pill "Semua" yang aktif
+            sekaligus jadi penanda state dan tombol reset. */}
+        <div className="-ml-2.5 flex flex-wrap items-center gap-y-0.5">
+          <span className="type-micro mr-2.5 text-muted">Area</span>
+          <button
+            type="button"
+            aria-pressed={filters.area.length === 0}
+            onClick={() => updateFilters((f) => ({ ...f, area: [] }))}
+            className="filter-btn"
+          >
+            Semua
+          </button>
+          <div className="contents">
             {areas.map(({ area, count }) => {
               const active = filters.area.includes(area)
               return (
@@ -136,155 +136,139 @@ export function ListingExplorer({ items, areas }: { items: KostListItem[]; areas
                   type="button"
                   aria-pressed={active}
                   onClick={() => updateFilters((f) => ({ ...f, area: toggle(f.area, area) }))}
-                  className={`shrink-0 rounded-full border px-3 py-1.5 text-sm transition-colors ${
-                    active
-                      ? 'border-ink bg-ink text-surface'
-                      : 'border-hairline text-muted hover:border-ink'
-                  }`}
+                  className="filter-btn"
                 >
                   {area}
-                  <span className="ml-1.5 font-mono text-xs opacity-60">{count}</span>
+                  <span className="type-num ml-1.5 text-xs opacity-55">{count}</span>
                 </button>
               )
             })}
           </div>
         </div>
 
-        <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
-          <fieldset className="space-y-2">
-            <legend className="font-mono text-xs tracking-wide uppercase text-muted">Jenis</legend>
-            <div className="chip-row">
-              {JENIS.map((j) => {
-                const active = filters.jenis.includes(j)
-                return (
-                  <button
-                    key={j}
-                    type="button"
-                    aria-pressed={active}
-                    onClick={() => updateFilters((f) => ({ ...f, jenis: toggle(f.jenis, j) }))}
-                    className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
-                      active
-                        ? 'border-ink bg-ink text-surface'
-                        : 'border-hairline text-muted hover:border-ink'
-                    }`}
-                  >
-                    {j}
-                  </button>
-                )
-              })}
-            </div>
-          </fieldset>
-
-          <fieldset className="space-y-2">
-            <legend className="font-mono text-xs tracking-wide uppercase text-muted">Kriteria</legend>
-            <div className="chip-row">
-              {KRITERIA.map((k) => {
-                const active = filters.kriteria.includes(k)
-                return (
-                  <button
-                    key={k}
-                    type="button"
-                    aria-pressed={active}
-                    onClick={() => updateFilters((f) => ({ ...f, kriteria: toggle(f.kriteria, k) }))}
-                    className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
-                      active
-                        ? 'border-ink bg-ink text-surface'
-                        : 'border-hairline text-muted hover:border-ink'
-                    }`}
-                  >
-                    {k}
-                  </button>
-                )
-              })}
-            </div>
-          </fieldset>
-
-          <div className="space-y-2">
-            <label htmlFor="budget" className="block font-mono text-xs tracking-wide uppercase text-muted">
-              Budget maksimum
-            </label>
-            <select
-              id="budget"
-              value={filters.maxHarga === null ? '' : String(filters.maxHarga)}
-              onChange={(e) =>
-                updateFilters((f) => ({
-                  ...f,
-                  maxHarga: e.target.value ? Number(e.target.value) : null,
-                }))
-              }
-              className="w-full rounded-md border border-hairline bg-transparent px-3 py-1.5 text-sm"
-            >
-              <option value="">Semua harga</option>
-              {BUDGET_BUCKETS.map((b) => (
-                <option key={b} value={b}>
-                  sampai {formatRupiahShort(b)}
-                </option>
-              ))}
-            </select>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="-ml-2.5 flex flex-wrap items-center gap-y-0.5">
+            <span className="type-micro mr-2.5 text-muted">Jenis</span>
+            {JENIS.map((j) => (
+              <button
+                key={j}
+                type="button"
+                aria-pressed={filters.jenis.includes(j)}
+                onClick={() => updateFilters((f) => ({ ...f, jenis: toggle(f.jenis, j) }))}
+                className="filter-btn"
+              >
+                {j}
+              </button>
+            ))}
+            <span className="type-micro mx-2.5 text-muted">Kriteria</span>
+            {KRITERIA.map((k) => (
+              <button
+                key={k}
+                type="button"
+                aria-pressed={filters.kriteria.includes(k)}
+                onClick={() => updateFilters((f) => ({ ...f, kriteria: toggle(f.kriteria, k) }))}
+                className="filter-btn"
+              >
+                {k}
+              </button>
+            ))}
           </div>
 
-          <div className="space-y-2">
-            <label htmlFor="urutan" className="block font-mono text-xs tracking-wide uppercase text-muted">
-              Urutkan
+          <div className="flex items-center gap-6">
+            <label className="flex items-center gap-2">
+              <span className="type-micro text-muted">Budget</span>
+              <select
+                id="budget"
+                value={filters.maxHarga === null ? '' : String(filters.maxHarga)}
+                onChange={(e) =>
+                  updateFilters((f) => ({
+                    ...f,
+                    maxHarga: e.target.value ? Number(e.target.value) : null,
+                  }))
+                }
+                className="type-num border-0 border-b border-hairline bg-transparent py-1 text-sm focus:border-ink focus:outline-none"
+              >
+                <option value="">semua</option>
+                {BUDGET_BUCKETS.map((b) => (
+                  <option key={b} value={b}>
+                    ≤ {formatRupiahShort(b)}
+                  </option>
+                ))}
+              </select>
             </label>
-            <select
-              id="urutan"
-              value={filters.sort}
-              onChange={(e) =>
-                updateFilters((f) => ({ ...f, sort: e.target.value as SortOption }))
-              }
-              className="w-full rounded-md border border-hairline bg-transparent px-3 py-1.5 text-sm"
-            >
-              {SORTS.map((s) => (
-                <option key={s.value} value={s.value}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
+
+            <label className="flex items-center gap-2">
+              <span className="type-micro text-muted">Urut</span>
+              <select
+                id="urutan"
+                value={filters.sort}
+                onChange={(e) => updateFilters((f) => ({ ...f, sort: e.target.value as SortOption }))}
+                className="border-0 border-b border-hairline bg-transparent py-1 text-sm focus:border-ink focus:outline-none"
+              >
+                {SORTS.map((s) => (
+                  <option key={s.value} value={s.value}>
+                    {s.label}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-4 border-t border-hairline pt-4">
-        <p aria-live="polite" className="text-sm text-muted">
-          <span className="font-mono text-ink">{results.length}</span> kost ditemukan
-          {activeCount > 0 && ` · ${activeCount} filter aktif`}
+      <div className="flex flex-wrap items-end justify-between gap-4 border-t border-hairline pt-5">
+        <div>
+          <p className="type-micro text-muted">Daftar</p>
+          <h2 className="type-section mt-1.5">Kost &amp; kontrakan</h2>
+        </div>
+        <p aria-live="polite" className="type-micro type-num text-muted">
+          {results.length} hasil{activeCount > 0 && ` · ${activeCount} filter`}
+          {activeCount > 0 && (
+            <>
+              {' · '}
+              <button
+                type="button"
+                onClick={() => updateFilters(() => DEFAULT_FILTERS)}
+                className="underline underline-offset-4 hover:text-ink"
+              >
+                hapus
+              </button>
+            </>
+          )}
         </p>
-        {activeCount > 0 && (
-          <button
-            type="button"
-            onClick={() => updateFilters(() => DEFAULT_FILTERS)}
-            className="rounded-md border border-hairline px-3 py-1.5 text-sm hover:border-ink"
-          >
-            Hapus filter
-          </button>
-        )}
       </div>
 
       {results.length === 0 ? (
-        <div className="border-t border-hairline pt-8 text-sm text-muted">
-          <p className="text-ink">Tidak ada kost yang cocok dengan filter ini.</p>
-          <p className="mt-1">
-            Coba perluas area, naikkan batas budget, atau hapus filter kriteria. Data kami hanya memuat
-            kost yang pernah diposting di grup publik — bukan seluruh kost di Batam.
+        <div className="type-body measure">
+          <p>Belum ada yang cocok dengan filter ini.</p>
+          <p className="mt-2 text-muted">
+            Coba buka areanya lebih lebar, naikkan batas budget, atau kosongkan kriteria. Daftar ini hanya
+            memuat kost yang pernah diposting di grup publik — bukan seluruh kost di Batam.
           </p>
         </div>
       ) : (
         <>
-          <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((kost) => (
               <KostCard key={kost.id} kost={kost} />
             ))}
           </div>
 
           {visible < results.length && (
-            <div className="flex justify-center pt-4">
+            <div className="pt-2">
               <button
                 type="button"
                 onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                className="rounded-md border border-hairline px-5 py-2.5 text-sm hover:border-ink"
+                className="text-[0.9375rem] font-medium underline-offset-4 hover:underline"
               >
-                {`Tampilkan ${Math.min(PAGE_SIZE, results.length - visible)} lagi (${results.length - visible} tersisa)`}
+                {`Tampilkan ${Math.min(PAGE_SIZE, results.length - visible)} lagi`}{' '}
+                {/* penghitung cuma muncul kalau sisanya lebih banyak dari satu batch —
+                    kalau tidak, angkanya sama dua kali dan terbaca seperti salah ketik */}
+                {results.length - visible > PAGE_SIZE && (
+                  <span className="type-micro type-num ml-2 text-muted">
+                    {results.length - visible} tersisa
+                  </span>
+                )}
               </button>
             </div>
           )}

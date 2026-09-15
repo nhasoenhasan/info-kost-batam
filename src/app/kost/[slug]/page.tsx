@@ -60,7 +60,11 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
   const rows: { label: string; value: React.ReactNode }[] = [
     {
       label: 'Area',
-      value: <Link href={`/area/${slugifyArea(kost.area)}/`}>{kost.area}</Link>,
+      value: (
+        <Link href={`/area/${slugifyArea(kost.area)}/`} className="underline-offset-4 hover:underline">
+          {kost.area}
+        </Link>
+      ),
     },
     { label: 'Jenis', value: kost.jenis },
     { label: 'Kriteria', value: kost.kriteria },
@@ -68,53 +72,61 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
       label: 'Budget',
       value: (
         <>
-          {formatRupiah(kost.harga)}
+          {kost.harga !== null ? formatRupiah(kost.harga) : 'belum tercantum'}
           {kost.harga !== null && <span className="text-muted"> /bulan</span>}
         </>
       ),
     },
     {
       label: 'Nomor WhatsApp',
-      value: (
-        <span className="font-mono">{formatPhoneForDisplay(kost.wa) ?? 'belum tersedia'}</span>
-      ),
+      value: <span className="type-num">{formatPhoneForDisplay(kost.wa) ?? 'belum tersedia'}</span>,
     },
-    { label: 'Referensi', value: kost.referensi.length ? kost.referensi.join(', ') : '—' },
   ]
 
+  // baris kosong tidak ditampilkan — "REFERENSI —" terbaca seperti halaman belum selesai
+  if (kost.referensi.length) {
+    rows.push({ label: 'Referensi', value: kost.referensi.join(', ') })
+  }
+
   return (
-    <article className="mx-auto w-full max-w-3xl px-5 py-8 sm:px-8 sm:py-12">
-      <nav aria-label="Breadcrumb" className="text-sm text-muted">
+    <article className="mx-auto w-full max-w-3xl px-5 py-10 sm:px-8 sm:py-14">
+      <nav aria-label="Breadcrumb" className="type-micro text-muted">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link href="/" className="hover:underline">
+            <Link href="/" className="hover:text-ink">
               Semua kost
             </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link href={`/area/${slugifyArea(kost.area)}/`} className="hover:underline">
+            <Link href={`/area/${slugifyArea(kost.area)}/`} className="hover:text-ink">
               {kost.area}
             </Link>
           </li>
         </ol>
       </nav>
 
-      <h1 className="mt-4 text-2xl leading-snug font-semibold tracking-tight sm:text-3xl">
+      <h1 className="mt-6 text-[1.375rem] leading-[1.25] font-medium tracking-[-0.02em] sm:text-[1.75rem]">
         {kost.alamat}
       </h1>
-      <p className="mt-2 font-mono text-sm text-muted">
-        {kost.area} · {kost.jenis} · {kost.kriteria}
+      <p className="type-micro mt-3 text-muted">
+        {kost.jenis} · {kost.kriteria}
       </p>
 
-      <p className="mt-6 font-mono text-3xl">
-        {formatRupiah(kost.harga)}
-        {kost.harga !== null && <span className="text-base text-muted"> /bulan</span>}
+      <p className="mt-8 text-[1.75rem] leading-none font-medium tracking-[-0.02em]">
+        {kost.harga !== null ? (
+          <>
+            <span className="type-num">{formatRupiah(kost.harga)}</span>
+            <span className="type-micro ml-2 align-middle text-muted">/bulan</span>
+          </>
+        ) : (
+          <span className="text-muted">Harga belum tercantum</span>
+        )}
       </p>
 
       {kost.hargaAlternatif.length > 1 && (
-        <p className="mt-2 text-sm text-flag">
-          Catatan: sumber data juga menyebut{' '}
+        <p className="type-body measure mt-4 text-muted italic">
+          Sumber data juga menyebut{' '}
           {kost.hargaAlternatif
             .filter((h) => h !== kost.harga)
             .map((h) => formatRupiah(h))
@@ -123,39 +135,47 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
         </p>
       )}
 
-      <div className="mt-6 flex flex-wrap gap-3">
-        <WaButton kost={kost} label="Chat pemilik via WhatsApp" />
+      <div className="mt-8 flex flex-wrap items-center gap-6">
+        <WaButton kost={kost} variant="solid" />
         <CopyButton text={kost.alamat} />
       </div>
-      <p className="mt-2 text-xs text-muted">
-        Pesan WhatsApp otomatis berisi alamat kost ini, jadi pemilik tahu kamu menanyakan yang mana.
+      <p className="type-body measure mt-3 text-sm text-muted">
+        Pesan WhatsApp-nya sudah berisi alamat kost ini, jadi pemilik langsung tahu kamu menanyakan yang
+        mana.
       </p>
 
-      <dl className="mt-10 divide-y divide-hairline border-y border-hairline text-sm">
-        {rows.map((r) => (
-          <div key={r.label} className="flex flex-wrap gap-x-6 gap-y-1 py-3">
-            <dt className="w-40 shrink-0 text-muted">{r.label}</dt>
-            <dd>{r.value}</dd>
-          </div>
-        ))}
-      </dl>
+      <div className="card mt-12 p-6">
+        <dl className="divide-y divide-hairline text-[0.9375rem]">
+          {rows.map((r) => (
+            <div key={r.label} className="flex flex-wrap gap-x-6 gap-y-1 py-3.5 first:pt-0 last:pb-0">
+              <dt className="type-micro w-40 shrink-0 pt-1 text-muted">{r.label}</dt>
+              <dd>{r.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      {/* tautan WA diulang di sini supaya tetap terjangkau tanpa scroll balik ke atas */}
+      <p className="mt-5">
+        <WaButton kost={kost} />
+      </p>
 
       {kost.catatan && (
-        <p className="mt-4 text-sm">
-          <span className="text-muted">Catatan admin: </span>
+        <p className="type-body measure mt-6 text-muted">
+          <span className="type-micro mr-2">Catatan admin</span>
           {kost.catatan}
         </p>
       )}
 
       {kost.needsReview && (
-        <p className="mt-4 border-l-2 border-flag pl-3 text-sm text-flag">
+        <p className="type-body measure mt-6 border-l border-hairline pl-4 text-muted italic">
           Data listing ini perlu diverifikasi admin: {kost.reviewNotes.join('; ')}.
         </p>
       )}
 
-      <section className="mt-10 border-t border-hairline pt-4 text-sm text-muted">
-        <h2 className="font-mono text-xs uppercase tracking-wide">Sebelum menghubungi</h2>
-        <ul className="mt-2 space-y-1.5">
+      <section className="type-body measure mt-12 border-t border-hairline pt-5 text-muted">
+        <p className="type-micro mb-3">Sebelum menghubungi</p>
+        <ul className="space-y-2">
           <li>
             Info ini direkap dari postingan publik, bukan hasil survei. Harga dan ketersediaan kamar bisa
             sudah berubah.
@@ -169,20 +189,21 @@ export default async function KostDetailPage({ params }: { params: Promise<{ slu
       </section>
 
       {tetangga.length > 0 && (
-        <section className="mt-12">
-          <h2 className="font-mono text-xs uppercase tracking-wide text-muted">
-            Kost lain di {kost.area}
-          </h2>
-          <div className="mt-4 grid gap-x-8 gap-y-8 sm:grid-cols-2">
+        <section className="mt-16">
+          <div className="flex items-baseline justify-between gap-4">
+            <p className="type-micro text-muted">Area yang sama</p>
+            <Link
+              href={`/area/${slugifyArea(kost.area)}/`}
+              className="type-micro underline-offset-4 hover:underline"
+            >
+              Lihat semua →
+            </Link>
+          </div>
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
             {tetangga.map((k) => (
               <KostCard key={k.id} kost={k} />
             ))}
           </div>
-          <p className="mt-6 text-sm">
-            <Link href={`/area/${slugifyArea(kost.area)}/`} className="underline">
-              Lihat semua kost di {kost.area}
-            </Link>
-          </p>
         </section>
       )}
 

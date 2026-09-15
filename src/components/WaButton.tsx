@@ -2,35 +2,37 @@ import { buildWaLink, waMessage } from '@/lib/phone'
 import type { KostRecord } from '@/lib/types'
 
 /**
- * Tombol WA. Pesan sudah terisi (alamat + sumber) supaya pemilik langsung paham
- * dan pengunjung tidak perlu mengetik apa pun.
+ * Afordans WhatsApp.
+ *
+ * - `text` (default): link teks dengan tanda panah. Dipakai di daftar, tempat
+ *   24 tombol solid sekaligus akan mengalahkan informasi kostnya.
+ * - `solid`: tombol solid warna aksen. Cuma dipakai sekali — di halaman detail,
+ *   tempat satu aksi utama memang pantas menonjol.
  */
 export function WaButton({
   kost,
   full = false,
+  /* "via WhatsApp" sengaja ikut di label yang terlihat, bukan cuma di aria-label:
+     nilai utama direktori ini memang chat langsung ke pemilik lewat WA, dan
+     "Chat pemilik" saja bisa disangka fitur chat internal. */
   label = 'Chat pemilik via WhatsApp',
-  variant = 'solid',
+  variant = 'text',
 }: {
   kost: Pick<KostRecord, 'alamat' | 'area' | 'wa'>
   full?: boolean
   label?: string
-  /** solid = aksi utama (halaman detail), outline = afordans saat menjelajah daftar */
-  variant?: 'solid' | 'outline'
+  variant?: 'text' | 'solid'
 }) {
   const href = buildWaLink(kost.wa, waMessage(kost))
 
   if (!href) {
-    return (
-      <p className="text-sm text-muted">
-        Nomor WhatsApp belum tersedia untuk listing ini — cek spreadsheet sumber untuk info terbaru.
-      </p>
-    )
+    return <p className="type-body text-muted">Nomor WhatsApp belum tersedia untuk listing ini.</p>
   }
 
   const style =
     variant === 'solid'
-      ? 'bg-brand text-white hover:bg-brand-dark'
-      : 'border border-hairline text-ink hover:border-ink'
+      ? 'rounded-md bg-accent px-5 py-3 text-sm font-medium text-white hover:opacity-90'
+      : 'text-[0.9375rem] font-medium text-ink underline-offset-4 hover:text-accent-text hover:underline'
 
   return (
     <a
@@ -38,11 +40,12 @@ export function WaButton({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Chat pemilik kost di ${kost.alamat} via WhatsApp`}
-      className={`inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors ${style} ${
-        full ? 'w-full' : ''
+      className={`inline-flex min-h-11 items-center gap-1.5 transition-colors ${style} ${
+        full ? 'w-full justify-center' : ''
       }`}
     >
       {label}
+      <span aria-hidden="true">→</span>
     </a>
   )
 }

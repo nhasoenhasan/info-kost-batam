@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { SiteHeader } from '@/components/SiteHeader'
 import { SiteFooter } from '@/components/SiteFooter'
@@ -7,11 +7,6 @@ import { SITE_NAME, SITE_URL } from '@/lib/phone'
 import { report } from '@/lib/kost'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -37,15 +32,20 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#fafaf9' },
-    { media: '(prefers-color-scheme: dark)', color: '#0c0a09' },
+    { media: '(prefers-color-scheme: light)', color: '#f1eee9' },
+    { media: '(prefers-color-scheme: dark)', color: '#100f0e' },
   ],
 }
 
+/* Dijalankan sebelum body dirender: tanpa ini, pengguna yang memilih tema
+   gelap akan melihat kedipan tema terang dulu. */
+const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t}}catch(e){}`
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" className={`${inter.variable} ${jetbrains.variable}`}>
+    <html lang="id" className={inter.variable} suppressHydrationWarning>
       <body className="flex min-h-dvh flex-col font-sans">
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

@@ -14,6 +14,7 @@ import { parseBudget, parseKriteria, parseJenis } from './lib/budget.mjs'
 import { buildSlug } from './lib/slug.mjs'
 import { mergeDuplicates } from './lib/dedupe.mjs'
 import { tidyAlamat, tidyCatatan } from './lib/text.mjs'
+import { findSuspectDuplicates } from './lib/similarity.mjs'
 
 const SOURCE_URL = process.env.SHEET_CSV_URL
 if (!SOURCE_URL) {
@@ -163,6 +164,12 @@ const byArea = records.reduce((acc, r) => {
   return acc
 }, {})
 
+// Pasangan yang alamatnya mirip tapi tidak identik (mis. "Bambu Kuning
+// Puskopkar A13 No 17" vs "Puskopkar Bambu Kuning A13 Nomor 17"). Hanya
+// dilaporkan, tidak digabung — penggabungan otomatis berisiko menelan listing
+// berbeda yang kebetulan satu nomor atau satu harga.
+const suspectDuplicates = findSuspectDuplicates(records)
+
 const report = {
   generatedAt: new Date().toISOString(),
   // tidak menyimpan URL/ID sumber: repo ini publik, dan spreadsheet tidak untuk dibagikan
@@ -174,6 +181,7 @@ const report = {
   byArea,
   dropped,
   duplicatesMerged,
+  suspectDuplicates,
   areaOverrides,
   needsReview: records
     .filter((r) => r.needsReview)
@@ -187,5 +195,5 @@ await writeFile(OUT_REPORT, JSON.stringify(report, null, 2) + '\n')
 console.log(
   `✓ sync selesai: ${records.length} listing dari ${dataRows.length} baris · ` +
     `${duplicatesMerged.length} duplikat digabung · ${dropped.length} dibuang · ` +
-    `${report.needsReview.length} perlu review`,
+    `${report.needsReview.length} perlu review · ${suspectDuplicates.length} pasangan mencurigakan (lihat report)`,
 )

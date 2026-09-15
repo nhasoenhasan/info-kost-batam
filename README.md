@@ -174,10 +174,30 @@ dengan "Both pnpm-lock.yaml and pnpm-workspace.yaml were found".
 
 ## Keputusan desain
 
+- **Kartu ber-shadow, info di dalam kartu.** Tiap listing adalah satu panel
+  (`bg-card` + `--card-shadow` + radius 14px) di atas kanvas krem. Karena daftar ini
+  tidak punya foto, **harga** dipakai sebagai jangkar visual — perannya sama seperti
+  foto di kartu sejenis: titik berat yang bisa dipindai cepat. Seluruh kartu bisa
+  ditap (judulnya memakai stretched-link `::after`), sementara tautan WhatsApp di
+  dalamnya tetap bisa diklik sendiri.
+- **Elevasi kartu berbeda per tema.** Di tema terang, shadow hitam hangat tiga lapis
+  (`0 1px 2px / 0 6px 14px / 0 18px 40px`) di atas kanvas krem melakukan seluruh
+  pekerjaan. Di tema gelap shadow hitam di atas kanvas nyaris hitam tidak bisa
+  "jatuh" ke mana-mana, jadi elevasinya ditanggung permukaan kartu yang lebih terang
+  (`#23201d` di atas `#100f0e`), rim putih 10%, dan highlight inset 1px di tepi atas.
+  Keduanya ditulis sebagai custom property biasa, **bukan** `light-dark()`.
+- **Terang & gelap bisa dipilih manual, default ikut sistem.** Tombol di header
+  menyimpan pilihan di `localStorage`; skrip inline kecil di `layout.tsx` menerapkan
+  atribut `data-theme` **sebelum** body dirender supaya tidak ada kedipan tema. Dua
+  palet ditulis sekali lewat `light-dark()`, dengan baris fallback biasa di atasnya —
+  browser lama yang belum mengenal fungsi itu tetap dapat tema terang yang terbaca.
+  ⚠️ Jangan pakai `light-dark()` untuk daftar `box-shadow`: Lightning CSS gagal
+  mengompilasinya dan token-nya hilang tanpa peringatan (kartu jadi tanpa shadow).
 - **Light-first + dark otomatis** (`prefers-color-scheme`), bukan toggle: audiensnya
   orang cari kost dari HP, sering siang hari.
-- **Hairline, bukan kartu berbayang.** Pemisah antar listing pakai border tipis supaya
-  grid 147 item tidak jadi dinding kotak.
+- **Hairline hanya untuk struktur.** Tabel spesifikasi di halaman detail dan pembatas
+  antar-blok bagian pakai border tipis; kartu listing sendiri tidak berbingkai di tema
+  terang (shadow yang memisahkan) dan ber-rim 10% di tema gelap.
 - **Tombol WA outline di daftar, solid teal di halaman detail.** 24 tombol solid teal
   sekaligus membuat tombolnya mengalahkan informasi kostnya; solid disimpan untuk satu
   aksi utama di halaman detail.

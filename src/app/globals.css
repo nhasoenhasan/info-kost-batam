@@ -1,59 +1,203 @@
 @import 'tailwindcss';
 
-/* ── Design token ─────────────────────────────────────────────────────────
-   Light-first: audiensnya orang cari kost dari HP, sering siang hari.
-   Dark mode ikut otomatis (prefers-color-scheme), bukan toggle terpisah.
+/* ─────────────────────────────────────────────────────────────────────────
+   Tema: kartu ber-shadow di atas kanvas, satu aksen warna.
+
+   Dua palet ditulis SEKALI pakai light-dark(): fungsi itu memilih nilai
+   berdasarkan `color-scheme` yang sedang aktif, dan `color-scheme` itu
+   ditentukan oleh atribut data-theme di <html> (toggle manual) atau oleh
+   preferensi sistem kalau belum pernah dipilih.
+
+   Tiap token punya baris fallback biasa di atasnya: browser lama yang belum
+   kenal light-dark() akan mengabaikan baris kedua dan tetap dapat tema terang
+   yang terbaca — bukan warna kosong.
    ───────────────────────────────────────────────────────────────────────── */
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
 
-  --color-surface: #fafaf9;
-  --color-ink: #1c1917;
-  --color-muted: #78716c;
-  --color-hairline: #e7e5e4;
-  /* hijau WA: tetap sama di dua tema supaya teks putih di atasnya selalu lolos kontras AA */
-  --color-brand: #0f766e;
-  --color-brand-dark: #115e59;
-  --color-flag: #b45309;
+  /* kanvas sedikit lebih dalam dari sebelumnya: jarak nilai ke kartu putih
+     yang sempit bikin shadow apa pun terlihat rata. */
+  --color-paper: #f1eee9;
+  --color-paper: light-dark(#f1eee9, #100f0e);
+  --color-card: #ffffff;
+  /* Permukaan kartu di tema gelap dinaikkan lebih jauh dari kanvas: shadow hitam
+     di atas kanvas hitam tidak menambah kedalaman, jadi beda nilai permukaan +
+     rim yang harus menanggung elevasinya. */
+  --color-card: light-dark(#ffffff, #23201d);
+  --color-ink: #1a1917;
+  --color-ink: light-dark(#1a1917, #f2f0ec);
+  --color-muted: #625c55;
+  --color-muted: light-dark(#625c55, #a9a29a);
+  --color-hairline: #e5e0d7;
+  --color-hairline: light-dark(#e5e0d7, #2c2926);
+  --color-select: #ebe6de;
+  --color-select: light-dark(#ebe6de, #292623);
+  /* aksen dipakai sebagai FILL (teks putih di atasnya 6.44:1 di dua tema) */
+  --color-accent: #0f6b57;
+  /* versi untuk teks/link: #0f6b57 di atas kertas gelap cuma 2.93:1 (gagal) */
+  --color-accent-text: #0f6b57;
+  --color-accent-text: light-dark(#0f6b57, #5fbfa1);
+
+  --radius-card: 0.875rem;
+  /* Shadow hitam tunggal untuk dua tema, TANPA light-dark(): argumen light-dark()
+     yang berisi daftar shadow berkoma gagal dikompilasi Lightning CSS dan
+     token-nya hilang sama sekali dari hasil build (kartu jadi tanpa shadow).
+     Hitam beralfa tetap terbaca di terang maupun gelap, dan di tema gelap
+     kartunya juga sudah lebih terang dari kanvas. */
+  /* Tiga lapis, tint hangat (bukan abu-biru — kanvasnya hangat, shadow kebiruan
+     terbaca kotor). Lapis pertama menempel di tepi, kedua memberi "kertas
+     terangkat", ketiga halo lebar. Satu lapis blur besar saja terbaca seperti
+     kabut, bukan elevasi. */
+  --shadow-card:
+    0 1px 2px 0 rgb(28 22 16 / 0.05), 0 6px 14px -4px rgb(28 22 16 / 0.1),
+    0 18px 40px -20px rgb(28 22 16 / 0.18);
+  --shadow-card-hover:
+    0 2px 6px 0 rgb(28 22 16 / 0.07), 0 10px 22px -6px rgb(28 22 16 / 0.14),
+    0 26px 52px -22px rgb(28 22 16 / 0.24);
 }
 
+/* Skema warna: default ikut sistem, atribut menimpanya. */
+:root {
+  color-scheme: light dark;
+  /* Garis tepi kartu. Di tema terang kartu putih sudah terpisah dari kanvas
+     lewat shadow; di tema gelap shadow hitam di atas kanvas nyaris hitam tidak
+     terbaca, jadi elevasinya dibantu tepi putih tipis. Ditulis sebagai custom
+     property biasa (bukan @theme) supaya Lightning CSS tidak mengompilasinya
+     jadi var internal skema warna. */
+  --card-edge: transparent;
+  /* Elevasi kartu — DUA definisi, karena tema gelap butuh bahasa yang berbeda:
+     di terang shadow hitam hangat bekerja; di gelap tidak ada yang bisa dibuat
+     lebih gelap lagi, jadi elevasinya pakai shadow hitam lebih pekat (untuk
+     kedalaman) + semburat putih tipis di tepi atas (untuk ketinggian).
+     Ditulis sebagai custom property biasa, bukan @theme: light-dark() berisi
+     daftar shadow berkoma gagal dikompilasi dan token-nya hilang. */
+  --card-shadow:
+    0 1px 2px rgb(28 22 16 / 0.05), 0 6px 14px -4px rgb(28 22 16 / 0.1),
+    0 18px 40px -20px rgb(28 22 16 / 0.18);
+  --card-shadow-hover:
+    0 2px 6px rgb(28 22 16 / 0.07), 0 10px 22px -6px rgb(28 22 16 / 0.14),
+    0 26px 52px -22px rgb(28 22 16 / 0.24);
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+:root[data-theme='dark'] {
+  --card-edge: rgb(255 255 255 / 0.1);
+  --card-shadow:
+    0 1px 2px rgb(0 0 0 / 0.5), 0 10px 26px -10px rgb(0 0 0 / 0.7),
+    inset 0 1px 0 rgb(255 255 255 / 0.05);
+  --card-shadow-hover:
+    0 2px 6px rgb(0 0 0 / 0.55), 0 18px 40px -14px rgb(0 0 0 / 0.8),
+    inset 0 1px 0 rgb(255 255 255 / 0.07);
+}
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-surface: #0c0a09;
-    --color-ink: #f5f5f4;
-    --color-muted: #a8a29e;
-    --color-hairline: #292524;
-    --color-flag: #fbbf24;
+  :root:not([data-theme='light']) {
+    --card-edge: rgb(255 255 255 / 0.1);
+    --card-shadow:
+      0 1px 2px rgb(0 0 0 / 0.5), 0 10px 26px -10px rgb(0 0 0 / 0.7),
+      inset 0 1px 0 rgb(255 255 255 / 0.05);
+    --card-shadow-hover:
+      0 2px 6px rgb(0 0 0 / 0.55), 0 18px 40px -14px rgb(0 0 0 / 0.8),
+      inset 0 1px 0 rgb(255 255 255 / 0.07);
   }
 }
 
-:root {
-  color-scheme: light dark;
-}
-
 html {
+  -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-surface);
+  background-color: var(--color-paper);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-/* Semua kontrol harus punya focus state yang jelas (dicek manual di Task a11y). */
+@layer components {
+  /* ── Skala tipe. Dipilih sekali di sini, tidak ad hoc per elemen.
+       Line-height turun saat ukuran naik: display butuh leading ketat. ── */
+  .type-display {
+    font-size: clamp(2.125rem, 1.45rem + 2.7vw, 3.25rem);
+    line-height: 1.04;
+    letter-spacing: -0.033em;
+    font-weight: 500;
+  }
+  .type-section {
+    font-size: 1.4375rem;
+    line-height: 1.22;
+    letter-spacing: -0.018em;
+    font-weight: 500;
+  }
+  .type-title {
+    font-size: 1.0625rem;
+    line-height: 1.38;
+    letter-spacing: -0.006em;
+    font-weight: 500;
+  }
+  .type-body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .type-micro {
+    font-size: 0.6875rem;
+    line-height: 1.45;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+  }
+  .type-num {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  /* Lebar baca. 52ch ≈ 65 karakter nyata (terukur; ch = lebar digit "0"). */
+  .measure {
+    max-width: 52ch;
+  }
+  .measure-title {
+    max-width: 40ch;
+  }
+
+  /* Filter: teks biasa; yang aktif jadi pill abu lembut. Kotaknya 44px supaya
+     nyaman disentuh, dan menjorok ke margin (-ml di barisnya) supaya TEKS-nya
+     tetap rata dengan tepi kolom. */
+  .card {
+    border-radius: var(--radius-card);
+    background: var(--color-card);
+    border: 1px solid var(--card-edge);
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 200ms ease;
+  }
+  .card:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .filter-btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    padding: 0 0.6rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+  .filter-btn:hover {
+    color: var(--color-ink);
+  }
+  .filter-btn[aria-pressed='true'] {
+    background: var(--color-select);
+    color: var(--color-ink);
+    border-radius: 999px;
+    font-weight: 500;
+  }
+}
+
 :where(a, button, input, select, summary):focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 2px;
-  border-radius: 4px;
-}
-
-/* baris chip filter — wrap, bukan scroll horizontal, supaya tidak ada chip
-   yang terpotong di tepi container (terlihat seperti bug) */
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  border-radius: 3px;
 }
