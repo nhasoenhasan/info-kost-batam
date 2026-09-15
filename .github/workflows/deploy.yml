@@ -56,7 +56,10 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --severity-threshold=high
+          # --all-projects wajib: scaffold Next.js menaruh pnpm-workspace.yaml
+          # (allowlist ignoredBuiltDependencies), dan tanpa flag ini Snyk menolak
+          # dengan "Both pnpm-lock.yaml and pnpm-workspace.yaml were found".
+          args: --all-projects --severity-threshold=high
 
   deploy:
     needs: [test, security]
